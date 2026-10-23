@@ -172,7 +172,7 @@ ${body}
 function cardHtml(r, prefix = "") {
   const href = `${prefix}fiches/${esc(r.id)}.html`;
   const img = r.image
-    ? `<img src="${esc(r.image)}" alt="" loading="lazy" width="120" height="120">`
+    ? `<img src="${esc(r.image)}" alt="" loading="eager" decoding="async" referrerpolicy="no-referrer" width="120" height="120">`
     : `<div class="card-ph" aria-hidden="true">📦</div>`;
   return `<article class="card">
   <a class="card-media" href="${href}">${img}</a>
@@ -190,7 +190,7 @@ function ficheHtml(r) {
     ? `<ul>${r.conduites_a_tenir.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>`
     : "<p>Voir la fiche officielle.</p>";
   const img = r.image
-    ? `<figure class="fiche-img"><img src="${esc(r.image)}" alt="Illustration du produit rappelé" loading="lazy"></figure>`
+    ? `<figure class="fiche-img"><img src="${esc(r.image)}" alt="Illustration du produit rappelé" loading="lazy" referrerpolicy="no-referrer"></figure>`
     : "";
   const body = `
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -473,8 +473,8 @@ main.wrap { padding: 1.5rem 0 3rem; }
   overflow: hidden; display: grid; grid-template-columns: 104px 1fr; min-height: 132px;
   box-shadow: 0 4px 14px rgba(26,35,50,.04);
 }
-.card-media { background: #ebe4d8; display: grid; place-items: center; text-decoration: none; }
-.card-media img { width: 100%; height: 100%; object-fit: cover; }
+.card-media { background: #ebe4d8; display: grid; place-items: center; text-decoration: none; position: relative; min-height: 104px; overflow: hidden; }
+.card-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .card-ph { font-size: 1.8rem; opacity: .7; }
 .card-body { padding: .85rem .9rem; }
 .card h3 { margin: .2rem 0 .25rem; font-size: 1rem; line-height: 1.3; }
