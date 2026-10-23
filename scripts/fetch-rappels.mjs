@@ -630,7 +630,7 @@ async function main() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls
   .map(
-    (u) => `  <url><loc>https://EXAMPLE.github.io/rappel-alertes/${u}</loc><lastmod>${verifiedAt.slice(0, 10)}</lastmod></url>`
+    (u) => `  <url><loc>https://caro123-create.github.io/rappel-alertes/${u}</loc><lastmod>${verifiedAt.slice(0, 10)}</lastmod></url>`
   )
   .join("\n")}
 </urlset>
@@ -638,7 +638,7 @@ ${sitemapUrls
   writeFileSync(join(ROOT, "sitemap.xml"), sitemap);
   writeFileSync(
     join(ROOT, "robots.txt"),
-    `User-agent: *\nAllow: /\nSitemap: https://EXAMPLE.github.io/rappel-alertes/sitemap.xml\n`
+    `User-agent: *\nAllow: /\nSitemap: https://caro123-create.github.io/rappel-alertes/sitemap.xml\n`
   );
 
   console.log(JSON.stringify({
