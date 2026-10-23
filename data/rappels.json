@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T07:26:55.142Z",
+  "generated_at": "2026-10-23T07:59:31.340Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -54,7 +54,7 @@
       "image": "https://rappel.conso.gouv.fr/image/8147f684-f46e-4e87-ad95-d09e34ebf30b.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23913/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23904",
@@ -82,7 +82,7 @@
       "image": "https://rappel.conso.gouv.fr/image/d68992bd-71ab-4491-8fef-2e482e216003.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23904/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23903",
@@ -110,7 +110,7 @@
       "image": "https://rappel.conso.gouv.fr/image/726ed0e2-e4b7-4ba9-a72c-a24d309eec0d.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23903/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23911",
@@ -138,7 +138,7 @@
       "image": "https://rappel.conso.gouv.fr/image/29f81fca-ed11-4763-8af0-168d899b6d24.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23911/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23907",
@@ -168,7 +168,7 @@
       "image": "https://rappel.conso.gouv.fr/image/764d2566-590f-4556-9fd8-3a9a9c2eb5bf.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23907/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23887",
@@ -196,7 +196,7 @@
       "image": "https://rappel.conso.gouv.fr/image/996db1bb-f9c5-40a0-b2b6-667bdeb1c99c.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23887/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23883",
@@ -224,7 +224,7 @@
       "image": "https://rappel.conso.gouv.fr/image/25df9675-64b6-45b8-8d59-6131cfa6d21c.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23883/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23882",
@@ -252,7 +252,7 @@
       "image": "https://rappel.conso.gouv.fr/image/9553321e-666f-4958-a8ac-cb679cfa9b59.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23882/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23885",
@@ -280,7 +280,7 @@
       "image": "https://rappel.conso.gouv.fr/image/8c625a71-c2b3-4c52-9bde-3f3d53883c06.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23885/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23886",
@@ -308,7 +308,7 @@
       "image": "https://rappel.conso.gouv.fr/image/28066e34-05e5-462f-8cad-4de7a8c61a7f.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23886/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23884",
@@ -336,7 +336,7 @@
       "image": "https://rappel.conso.gouv.fr/image/78c59782-cf8c-43fa-881f-157025e208a3.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23884/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23896",
@@ -364,7 +364,7 @@
       "image": "https://rappel.conso.gouv.fr/image/dca33420-52ca-450a-9fbf-f6ccc1a5b3f1.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23896/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23879",
@@ -392,7 +392,7 @@
       "image": "https://rappel.conso.gouv.fr/image/3b93ac91-490a-4954-b589-57ec19de6ff6.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23879/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23881",
@@ -420,7 +420,7 @@
       "image": "https://rappel.conso.gouv.fr/image/56ca9127-7b11-49bf-adee-92c1ab9b9fae.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23891",
@@ -448,7 +448,7 @@
       "image": "https://rappel.conso.gouv.fr/image/5aad1808-e0d5-40eb-8482-0af3cbfca61d.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23891/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23892",
@@ -476,7 +476,7 @@
       "image": "https://rappel.conso.gouv.fr/image/10552974-aa62-4dfd-ae25-8160c9ddd7f4.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23892/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23889",
@@ -504,7 +504,7 @@
       "image": "https://rappel.conso.gouv.fr/image/455b25b2-0cf6-4728-954e-eea1c24d424a.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23889/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23888",
@@ -532,7 +532,7 @@
       "image": "https://rappel.conso.gouv.fr/image/088141ba-5be5-45d2-8adf-11f0d505f7ac.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23888/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23890",
@@ -560,7 +560,7 @@
       "image": "https://rappel.conso.gouv.fr/image/9796033a-fd03-4aa4-9350-e505a02fcd3f.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23890/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     },
     {
       "id": "23905",
@@ -590,7 +590,7 @@
       "image": "https://rappel.conso.gouv.fr/image/cfff1d96-b847-434a-8af1-47e36e9644c8.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23905/interne",
-      "verified_at": "2026-10-23T07:26:55.142Z"
+      "verified_at": "2026-10-23T07:59:31.340Z"
     }
   ]
 }
