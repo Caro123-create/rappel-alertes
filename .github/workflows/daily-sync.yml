@@ -1,0 +1,44 @@
+# Synchronisation quotidienne RappelConso -> site statique.
+# Planifié à 01:00 UTC = 02:00 Europe/Madrid en hiver (UTC+1) ; 03:00 en été (UTC+2).
+# Remarque : GitHub cron est en UTC sans gestion de l'heure d'été ; pour 03:00 Madrid
+# toute l'année, utiliser "0 2 * * *" en hiver (fin oct.->fin mars) et "0 1 * * *" en été.
+# GitHub peut retarder les tâches planifiées de quelques minutes.
+# Si les Actions sont désactivées : dépôt > onglet "Actions" > activer les workflows.
+# Lancement manuel : onglet Actions > "Daily sync" > "Run workflow".
+# Pause : onglet Actions > "Daily sync" > "..." > "Disable workflow".
+name: Daily sync
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Fetch RappelConso data and rebuild pages
+        run: node scripts/fetch-rappels.mjs
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Aucun changement."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Sync RappelConso $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
