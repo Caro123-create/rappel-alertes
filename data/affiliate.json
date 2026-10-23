@@ -1,0 +1,21 @@
+{
+  "updated_at": "2026-10-23",
+  "disclosure_fr": "Liens commerciaux : certains liens sont affiliés (Amazon Partenaires / Awin).",
+  "disclosure_footer_fr": "Certaines pages contiennent des liens d’affiliation : si vous achetez via ces liens, Rappel Alertes peut percevoir une commission, sans surcoût pour vous. Cela n’influence pas les informations reprises de RappelConso.",
+  "amazon": {
+    "enabled": true,
+    "marketplace": "amazon.fr",
+    "associates_id_chosen": "rappelalertes",
+    "amazon_tag": "rappelalertes-21",
+    "tag_note": "Sur Amazon Partenaires FR, l’identifiant magasin / Tracking ID porte en général le suffixe -21 (marketplace France). Tag utilisé dans les URL : rappelalertes-21. À confirmer dans Associates Central → Gérer vos ID de suivi si le tableau de bord affiche une autre valeur exacte.",
+    "link_pattern": "https://www.amazon.fr/s?k={ENCODED_KEYWORD}&tag={TAG}",
+    "cta_label_fr": "Voir un produit de remplacement sur Amazon",
+    "block_category_regex": "m[eé]dicament|dispositif.?m[eé]dical|produit.?pharmaceutique|compl[eé]ment.?alimentaire.?m[eé]dical",
+    "block_text_regex": "m[eé]dicament|ordonnance|dispositif.?m[eé]dical"
+  },
+  "awin": {
+    "enabled": false,
+    "publisher_id": null,
+    "note": "Placeholder — activer après choix des programmes annonceurs et obtention des deep links Awin."
+  }
+}

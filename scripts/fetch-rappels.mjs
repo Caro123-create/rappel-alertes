@@ -16,7 +16,7 @@ const FETCH_LIMIT = 50;
 const FICHE_LIMIT = 20;
 const SITE_NAME = "Rappel Alertes";
 const SITE_TAGLINE = "Alertes de rappels produits — sources officielles";
-const SITE_BASE = ""; // relative paths for GitHub Pages root or subpath later
+const SITE_BASE = "/rappel-alertes"; // GitHub Pages project site
 
 function esc(s) {
   return String(s ?? "")
@@ -69,6 +69,78 @@ function splitPipes(s) {
     .filter(Boolean);
 }
 
+
+function loadAffiliateConfig() {
+  const p = join(ROOT, "data/affiliate.json");
+  if (!existsSync(p)) {
+    return {
+      disclosure_fr: "Liens commerciaux : certains liens sont affiliés (Amazon Partenaires / Awin).",
+      disclosure_footer_fr: "Certaines pages contiennent des liens d’affiliation.",
+      amazon: { enabled: false, amazon_tag: "rappelalertes-21" },
+      awin: { enabled: false },
+    };
+  }
+  return JSON.parse(readFileSync(p, "utf8"));
+}
+
+function affiliateAnyEnabled(cfg) {
+  return Boolean(cfg?.amazon?.enabled || cfg?.awin?.enabled);
+}
+
+function amazonSearchKeyword(r) {
+  const marque = String(r.marque_produit || "").trim();
+  const lib = String(r.libelle || "").trim();
+  const parts = [];
+  if (marque && !/^sans\s*marque$/i.test(marque) && marque.toLowerCase() !== lib.toLowerCase()) {
+    parts.push(marque);
+  }
+  if (lib) parts.push(lib);
+  let kw = parts.join(" ").replace(/\s+/g, " ").trim();
+  if (kw.length > 120) kw = kw.slice(0, 120).trim();
+  return kw;
+}
+
+function amazonBlocked(r, cfg) {
+  const catRe = new RegExp(cfg.amazon?.block_category_regex || "m[eé]dicament", "i");
+  const textRe = new RegExp(cfg.amazon?.block_text_regex || "m[eé]dicament", "i");
+  const blobCat = `${r.categorie_produit || ""} ${r.sous_categorie_produit || ""}`;
+  const blobText = `${r.libelle || ""} ${r.motif_rappel || ""} ${r.risques_encourus || ""}`;
+  return catRe.test(blobCat) || textRe.test(blobText);
+}
+
+function shouldShowAmazonCta(r, cfg) {
+  if (!cfg?.amazon?.enabled) return false;
+  if (!cfg.amazon.amazon_tag) return false;
+  if (amazonBlocked(r, cfg)) return false;
+  return Boolean(amazonSearchKeyword(r));
+}
+
+function amazonSearchUrl(r, cfg) {
+  const tag = cfg.amazon.amazon_tag;
+  const kw = amazonSearchKeyword(r);
+  return `https://www.amazon.fr/s?k=${encodeURIComponent(kw)}&tag=${encodeURIComponent(tag)}`;
+}
+
+function affiliateAsideHtml(r, cfg) {
+  if (!shouldShowAmazonCta(r, cfg)) return "";
+  const url = amazonSearchUrl(r, cfg);
+  const label = cfg.amazon.cta_label_fr || "Voir un produit de remplacement sur Amazon";
+  const disclosure = cfg.disclosure_fr || "Liens commerciaux : certains liens sont affiliés (Amazon Partenaires / Awin).";
+  return `
+          <div class="box commercial">
+            <h2>Remplacement (lien commercial)</h2>
+            <p class="commercial-note">Suggestion d’achat optionnelle, distincte de la fiche officielle. Ce n’est pas un conseil médical ni une consigne de rappel.</p>
+            <p><a class="btn btn-amazon" href="${esc(url)}" rel="sponsored noopener noreferrer" target="_blank">${esc(label)}</a></p>
+            <p class="disclosure-affiliate">${esc(disclosure)}</p>
+          </div>`;
+}
+
+function footerAffiliateHtml(cfg) {
+  if (!affiliateAnyEnabled(cfg)) return "";
+  const line = cfg.disclosure_footer_fr || cfg.disclosure_fr || "";
+  return `\n      <p class="disclosure-affiliate">${esc(line)}</p>`;
+}
+
 function normalizeRecord(raw, verifiedAt) {
   const id = raw.id ?? raw.rappel_guid;
   const sourceUrl =
@@ -112,10 +184,11 @@ async function fetchRecent() {
   return { total: data.total_count, results: data.results || [] };
 }
 
-function layout({ title, description, canonicalPath, body, active }) {
+function layout({ title, description, canonicalPath, body, active, affiliateCfg }) {
   const pageTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
   const desc = description || SITE_TAGLINE;
   const canon = canonicalPath || "/";
+  const affFoot = footerAffiliateHtml(affiliateCfg || {});
   return `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -159,7 +232,7 @@ ${body}
         <a href="https://rappel.conso.gouv.fr/" rel="noopener">RappelConso</a>
         (DGCCRF / DGAL / DGEC / DGPR), publiées sous
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" rel="noopener">Licence Ouverte 2.0</a>.</p>
-      <p class="muted">Ce site n’est pas un service officiel de l’État. Vérifiez toujours la fiche source. Projet indépendant — sans lien avec Elena Reign.</p>
+      <p class="muted">Ce site n’est pas un service officiel de l’État. Vérifiez toujours la fiche source. Projet indépendant — sans lien avec Elena Reign.</p>${affFoot}
       <p class="muted"><a href="${SITE_BASE}/a-propos.html">Mentions &amp; sources</a></p>
     </div>
   </footer>
@@ -185,12 +258,16 @@ function cardHtml(r, prefix = "") {
 </article>`;
 }
 
-function ficheHtml(r) {
+function ficheHtml(r, affiliateCfg) {
   const conduites = r.conduites_a_tenir.length
     ? `<ul>${r.conduites_a_tenir.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>`
     : "<p>Voir la fiche officielle.</p>";
   const img = r.image
     ? `<figure class="fiche-img"><img src="${esc(r.image)}" alt="Illustration du produit rappelé" loading="lazy" referrerpolicy="no-referrer"></figure>`
+    : "";
+  const commercial = affiliateAsideHtml(r, affiliateCfg || {});
+  const pageDisclosure = shouldShowAmazonCta(r, affiliateCfg || {})
+    ? `<p class="disclosure-affiliate">${esc((affiliateCfg || {}).disclosure_fr || "")}</p>`
     : "";
   const body = `
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -230,6 +307,7 @@ function ficheHtml(r) {
             <p><a class="btn" href="${esc(r.lien_officiel)}" rel="noopener noreferrer" target="_blank">Ouvrir la fiche RappelConso</a></p>
             ${r.lien_affichette ? `<p><a href="${esc(r.lien_affichette)}" rel="noopener noreferrer" target="_blank">Affichette PDF</a></p>` : ""}
           </div>
+          ${commercial}
           <dl class="facts">
             <div><dt>N° fiche</dt><dd>${esc(r.numero_fiche || r.id)}</dd></div>
             <div><dt>Catégorie</dt><dd>${esc(r.categorie_produit)}</dd></div>
@@ -241,6 +319,7 @@ function ficheHtml(r) {
         </aside>
       </div>
       <p class="disclaimer">Informations issues de l’open data RappelConso. Aucune donnée inventée. En cas de doute, suivez exclusivement les consignes de la fiche officielle.</p>
+      ${pageDisclosure}
     </article>`;
   return layout({
     title: `Rappel : ${r.libelle}`,
@@ -248,10 +327,11 @@ function ficheHtml(r) {
     canonicalPath: `/fiches/${r.id}.html`,
     body,
     active: "",
+    affiliateCfg,
   });
 }
 
-function indexHtml(records, cats) {
+function indexHtml(records, cats, affiliateCfg) {
   const cards = records.map((r) => cardHtml(r)).join("\n");
   const catLinks = cats
     .map(
@@ -288,10 +368,11 @@ function indexHtml(records, cats) {
     canonicalPath: "/",
     body,
     active: "home",
+    affiliateCfg,
   });
 }
 
-function categoryIndexHtml(cats) {
+function categoryIndexHtml(cats, affiliateCfg) {
   const list = cats
     .map(
       (c) =>
@@ -310,10 +391,11 @@ function categoryIndexHtml(cats) {
     canonicalPath: "/categories/",
     body,
     active: "cats",
+    affiliateCfg,
   });
 }
 
-function categoryPageHtml(cat, records) {
+function categoryPageHtml(cat, records, affiliateCfg) {
   const cards = records.map((r) => cardHtml(r, "../")).join("\n");
   const body = `
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -330,10 +412,11 @@ function categoryPageHtml(cat, records) {
     canonicalPath: `/categories/${cat.slug}.html`,
     body,
     active: "cats",
+    affiliateCfg,
   });
 }
 
-function aboutHtml(meta) {
+function aboutHtml(meta, affiliateCfg) {
   const body = `
     <header class="page-head">
       <h1>À propos</h1>
@@ -349,6 +432,10 @@ function aboutHtml(meta) {
       <h2>Méthode</h2>
       <p>Chaque fiche affiche le lien officiel, la date de publication de l’API et la date de vérification Mogul (<code>verified_at</code>). Aucune information n’est inventée : seuls les champs de l’open data sont repris.</p>
       <p>Dernière génération : <time datetime="${esc(meta.generated_at)}">${esc(fmtDateFR(meta.generated_at))}</time> · ${meta.fiche_count} fiches · total API connu : ${meta.api_total_count}</p>
+      <h2>Liens commerciaux / affiliation</h2>
+      <p>Certaines fiches peuvent proposer un lien vers un <strong>produit de remplacement</strong> sur Amazon.fr (programme Amazon Partenaires). Ces liens sont <strong>commerciaux</strong> : si vous achetez via ces liens, Rappel Alertes peut percevoir une commission, sans surcoût pour vous.</p>
+      <p class="disclosure-affiliate">${esc((affiliateCfg || {}).disclosure_fr || "Liens commerciaux : certains liens sont affiliés (Amazon Partenaires / Awin).")}</p>
+      <p>Le lien officiel RappelConso reste toujours prioritaire et n’est jamais remplacé. Les données de rappel ne sont pas sponsorisées. Awin pourra être utilisé plus tard pour d’autres enseignes (non actif pour l’instant).</p>
       <h2>Contact</h2>
       <p>Contact à définir (placeholder). Pour une urgence sanitaire, suivez les consignes de la fiche RappelConso et contactez un professionnel de santé si besoin.</p>
       <h2>Vie privée</h2>
@@ -360,6 +447,7 @@ function aboutHtml(meta) {
     canonicalPath: "/a-propos.html",
     body,
     active: "about",
+    affiliateCfg,
   });
 }
 
@@ -506,6 +594,20 @@ main.wrap { padding: 1.5rem 0 3rem; }
 }
 .box.official a { color: #f0c9a8; }
 .box.official .btn { background: var(--accent); color: #fff; }
+.box.commercial {
+  background: #fffdf8; color: var(--ink); border: 1px dashed var(--line);
+  border-radius: 14px; padding: 1rem 1.1rem; margin-bottom: 1rem;
+}
+.box.commercial h2 { margin-top: 0; font-size: 1rem; }
+.commercial-note { font-size: .88rem; color: var(--muted); margin: 0 0 .75rem; }
+.btn-amazon {
+  background: #2f5d50; color: #fff !important; font-size: .92rem;
+}
+.btn-amazon:hover { background: #244a40; color: #fff !important; }
+.disclosure-affiliate {
+  font-size: .85rem; color: var(--muted);
+  border-left: 3px solid #c4a574; padding-left: .75rem; margin: .75rem 0 0;
+}
 .facts { margin: 0; display: grid; gap: .65rem; }
 .facts > div { border-top: 1px solid var(--line); padding-top: .55rem; }
 .facts dt { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
@@ -564,7 +666,9 @@ async function main() {
   mkdirSync(join(ROOT, "assets/js"), { recursive: true });
 
   const verifiedAt = new Date().toISOString();
+  const affiliateCfg = loadAffiliateConfig();
   console.log("Fetching RappelConso…");
+  console.log("Affiliate amazon:", affiliateCfg?.amazon?.enabled, "tag:", affiliateCfg?.amazon?.amazon_tag);
   const { total, results } = await fetchRecent();
   const byId = new Map();
   for (const raw of results) {
@@ -605,18 +709,20 @@ async function main() {
 
   writeCss();
   writeSearchJs();
-  writeFileSync(join(ROOT, "index.html"), indexHtml(fiches, cats));
+  writeFileSync(join(ROOT, "index.html"), indexHtml(fiches, cats, affiliateCfg));
   writeFileSync(join(ROOT, "a-propos.html"), aboutHtml({
     generated_at: verifiedAt,
     fiche_count: fiches.length,
     api_total_count: total,
-  }));
-  writeFileSync(join(ROOT, "categories/index.html"), categoryIndexHtml(cats));
+  }, affiliateCfg));
+  writeFileSync(join(ROOT, "categories/index.html"), categoryIndexHtml(cats, affiliateCfg));
   for (const cat of cats) {
-    writeFileSync(join(ROOT, `categories/${cat.slug}.html`), categoryPageHtml(cat, cat.items));
+    writeFileSync(join(ROOT, `categories/${cat.slug}.html`), categoryPageHtml(cat, cat.items, affiliateCfg));
   }
+  let amazonCtas = 0;
   for (const r of fiches) {
-    writeFileSync(join(ROOT, `fiches/${r.id}.html`), ficheHtml(r));
+    if (shouldShowAmazonCta(r, affiliateCfg)) amazonCtas += 1;
+    writeFileSync(join(ROOT, `fiches/${r.id}.html`), ficheHtml(r, affiliateCfg));
   }
 
   const sitemapUrls = [
@@ -647,6 +753,8 @@ ${sitemapUrls
     fetched: results.length,
     unique: all.length,
     fiches: fiches.length,
+    amazon_ctas: amazonCtas,
+    amazon_tag: affiliateCfg?.amazon?.amazon_tag || null,
     categories: cats.map((c) => `${c.slug}:${c.count}`),
     sample_links: fiches.slice(0, 3).map((r) => r.lien_officiel),
     verified_at: verifiedAt,
