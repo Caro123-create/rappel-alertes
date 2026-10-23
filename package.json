@@ -1,0 +1,11 @@
+{
+  "name": "rappel-alertes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MVP alertes rappels produits — RappelConso open data",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/fetch-rappels.mjs",
+    "preview": "python3 -m http.server 8765 --bind 127.0.0.1"
+  }
+}
