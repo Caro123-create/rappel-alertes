@@ -25,6 +25,17 @@ Projet de Carole, géré par l’agent **Mogul**. Indépendant de l’activité 
 
 Aucune donnée n’est inventée : seuls les champs de l’API sont repris. Chaque fiche affiche le lien officiel RappelConso, la date de publication API et la date de vérification Mogul.
 
+## Publication : file d'attente (1 fiche / jour max)
+
+Choix de Carole (24/10/2026) : **au plus une nouvelle fiche par jour**.
+
+- Le workflow GitHub Actions `daily-sync.yml` (02:00 UTC) est le **seul publieur**.
+- `scripts/fetch-rappels.mjs` lit les 100 rappels les plus récents de l’API, écarte ceux déjà publiés (`data/rappels.json`) ou incomplets (libellé, catégorie, date, risque/motif, conduite à tenir, lien officiel), et de moins de 30 jours.
+- Priorité : risque grave (listeria, salmonelle, E. coli, botulisme, blessure, brûlure, électrocution, incendie, étouffement…), puis le plus récent.
+- Garde-fou : champ `published_at` par fiche ; si une fiche a déjà été publiée le même jour UTC, rien n’est ajouté.
+- Les fiches en ligne ne sont jamais supprimées. Jours sans ajout : aucun fichier modifié, donc aucun commit.
+- Voir la file sans rien écrire : `DRY_RUN=1 node scripts/fetch-rappels.mjs` (champs `queue_count`, `queue_next`).
+
 ## Régénérer localement
 
 ```bash

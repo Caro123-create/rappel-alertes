@@ -1,4 +1,7 @@
-# Synchronisation quotidienne RappelConso -> site statique.
+# Synchronisation quotidienne RappelConso -> site statique (SEUL publieur du site).
+# Mode file d'attente : au plus 1 nouvelle fiche par jour UTC (MAX_NEW), garde-fou
+# published_at dans data/rappels.json : un 2e lancement le même jour n'ajoute rien.
+# Les fiches déjà en ligne ne sont jamais supprimées. Commit uniquement si changement.
 # Planifié à 01:00 UTC = 02:00 Europe/Madrid en hiver (UTC+1) ; 03:00 en été (UTC+2).
 # Remarque : GitHub cron est en UTC sans gestion de l'heure d'été ; pour 03:00 Madrid
 # toute l'année, utiliser "0 2 * * *" en hiver (fin oct.->fin mars) et "0 1 * * *" en été.
@@ -29,7 +32,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Fetch RappelConso data and rebuild pages
+      - name: Publish at most one new recall (queue mode)
+        env:
+          MAX_NEW: "1"
         run: node scripts/fetch-rappels.mjs
       - name: Commit and push if changed
         run: |
@@ -40,5 +45,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Sync RappelConso $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "Publish RappelConso (max 1/jour) $(date -u +%Y-%m-%dT%H:%MZ)"
           git push

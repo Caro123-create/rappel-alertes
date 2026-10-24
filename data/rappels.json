@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-10-24T07:00:54.797Z",
+  "generated_at": "2026-10-24T08:58:04.626Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
     "license": "Licence Ouverte 2.0",
     "portal": "https://rappel.conso.gouv.fr/"
   },
+  "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
   "api_total_count": 19104,
-  "count": 20,
+  "count": 29,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 16
+      "count": 25
     },
     {
       "name": "appareils électriques, outils",
@@ -20,13 +21,13 @@
       "count": 2
     },
     {
-      "name": "sports-loisirs",
-      "slug": "sports-loisirs",
+      "name": "bébés-enfants (hors alimentaire)",
+      "slug": "bebes-enfants-hors-alimentaire",
       "count": 1
     },
     {
-      "name": "bébés-enfants (hors alimentaire)",
-      "slug": "bebes-enfants-hors-alimentaire",
+      "name": "sports-loisirs",
+      "slug": "sports-loisirs",
       "count": 1
     }
   ],
@@ -57,7 +58,8 @@
       "image": "https://rappel.conso.gouv.fr/image/fe82063a-67f4-47c6-903b-c59af765f3d3.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23922/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23923",
@@ -87,7 +89,8 @@
       "image": "https://rappel.conso.gouv.fr/image/99aadbe0-07e5-435d-8e75-534a929f7930.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23923/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23925",
@@ -115,7 +118,8 @@
       "image": "https://rappel.conso.gouv.fr/image/94f060a1-2260-4df1-8908-4b2e6d50f2dd.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23925/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23924",
@@ -144,7 +148,8 @@
       "image": "https://rappel.conso.gouv.fr/image/2cd6d7c4-9771-48df-b3e8-2aeb079a392d.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23924/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23921",
@@ -174,7 +179,8 @@
       "image": "https://rappel.conso.gouv.fr/image/db7e2f64-07ea-4c4d-9c93-95cf5df67985.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23921/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23915",
@@ -202,7 +208,8 @@
       "image": "https://rappel.conso.gouv.fr/image/630fc2e4-e5ba-4919-9666-277ae004d30a.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23915/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23917",
@@ -231,7 +238,8 @@
       "image": "https://rappel.conso.gouv.fr/image/2e3abb43-99b7-4d3c-9f68-5981784859f3.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23917/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23918",
@@ -259,7 +267,8 @@
       "image": "https://rappel.conso.gouv.fr/image/b25d0549-dad8-4c5d-a88b-1dd0f4cb7b46.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23918/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23912",
@@ -288,7 +297,8 @@
       "image": "https://rappel.conso.gouv.fr/image/e7d52062-9529-437d-b02c-703c787b542a.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23912/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-24T07:00:55.000Z"
     },
     {
       "id": "23806",
@@ -316,7 +326,8 @@
       "image": "https://rappel.conso.gouv.fr/image/464c01fa-be9d-455e-8e61-205d6782721f.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23806/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23914",
@@ -344,7 +355,8 @@
       "image": "https://rappel.conso.gouv.fr/image/52101e04-2c1d-4783-a85c-1b2fe7294689.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23914/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23893",
@@ -372,7 +384,8 @@
       "image": "https://rappel.conso.gouv.fr/image/de198c38-74b1-487c-933b-69632ac805c0.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23893/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23910",
@@ -400,7 +413,8 @@
       "image": "https://rappel.conso.gouv.fr/image/dfa0b2cb-6b84-4846-b7b7-e6c94a74b807.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23910/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23894",
@@ -428,7 +442,8 @@
       "image": "https://rappel.conso.gouv.fr/image/5b65632d-d27e-4c5a-8c66-93c98b2a9357.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23894/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23880",
@@ -456,7 +471,8 @@
       "image": "https://rappel.conso.gouv.fr/image/9304e786-cac1-495b-91b6-4300fd7e5738.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23880/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T09:44:39.000Z"
     },
     {
       "id": "23913",
@@ -486,7 +502,8 @@
       "image": "https://rappel.conso.gouv.fr/image/8147f684-f46e-4e87-ad95-d09e34ebf30b.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23913/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
     },
     {
       "id": "23904",
@@ -514,7 +531,8 @@
       "image": "https://rappel.conso.gouv.fr/image/d68992bd-71ab-4491-8fef-2e482e216003.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23904/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
     },
     {
       "id": "23903",
@@ -542,7 +560,8 @@
       "image": "https://rappel.conso.gouv.fr/image/726ed0e2-e4b7-4ba9-a72c-a24d309eec0d.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23903/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
     },
     {
       "id": "23911",
@@ -570,7 +589,8 @@
       "image": "https://rappel.conso.gouv.fr/image/29f81fca-ed11-4763-8af0-168d899b6d24.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23911/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
     },
     {
       "id": "23907",
@@ -600,7 +620,269 @@
       "image": "https://rappel.conso.gouv.fr/image/764d2566-590f-4556-9fd8-3a9a9c2eb5bf.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23907/interne",
-      "verified_at": "2026-10-24T07:00:54.797Z"
+      "verified_at": "2026-10-24T07:00:54.797Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23887",
+      "rappel_guid": "fcc14bc0-e27a-44b9-ad02-29c6d73fb881",
+      "numero_fiche": "2026-10-0215",
+      "libelle": "boudin à l'oignon",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "boudin à l'oignon 180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "défaut de fabrication.",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "oulibo\thameau de cabezac\t11120\tbize minervois¤",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:37:23+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23887/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23887/interne",
+      "image": "https://rappel.conso.gouv.fr/image/996db1bb-f9c5-40a0-b2b6-667bdeb1c99c.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23887/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23883",
+      "rappel_guid": "8e3cb9e2-3b96-4a3f-bb73-8f522c3d217e",
+      "numero_fiche": "2026-10-0211",
+      "libelle": "pâté pur cochon 180g",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté pur cochon 180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "défaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "aucomptoirdesproducteurs\t2 rue gustave eiffel 11200 lezignan¤lafermecôtéproducteurs 21 rue rené panhard 11100 narbonne¤oulibo hameau de cabezac 11120 bize minervois¤les papilles 9 av de balcère 66210 lesangles¤enviedusud 14 place 31 toulouse",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:37:08+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23883/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23883/interne",
+      "image": "https://rappel.conso.gouv.fr/image/25df9675-64b6-45b8-8d59-6131cfa6d21c.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23883/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23882",
+      "rappel_guid": "943b9108-f6e0-4834-8a68-0b54a77941ac",
+      "numero_fiche": "2026-10-0210",
+      "libelle": "boudin pur cochon 180 g",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "boudin pur cochon 180 g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "défaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "oulibo\thameau de cabezac\t11120\tbize minervois¤",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:36:54+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23882/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23882/interne",
+      "image": "https://rappel.conso.gouv.fr/image/9553321e-666f-4958-a8ac-cb679cfa9b59.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23882/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23885",
+      "rappel_guid": "b5c0b7a0-8360-405b-87eb-17bf36fb2ea4",
+      "numero_fiche": "2026-10-0213",
+      "libelle": "pâté de foie aux cèpes",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté de foie aux cèpes  180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "defaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "au comptoir des producteurs 2 rue gustave eiffel 11200 lezignan¤oulibo hameau de cabezac 11120 bize minervois¤les papilles 9 av balcere 66210 lesangles",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:36:26+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23885/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23885/interne",
+      "image": "https://rappel.conso.gouv.fr/image/8c625a71-c2b3-4c52-9bde-3f3d53883c06.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23885/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23886",
+      "rappel_guid": "8f0df89c-2a2f-4168-a5c4-79ac9c257d64",
+      "numero_fiche": "2026-10-0214",
+      "libelle": "pâté au cognac",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté au cognac 180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "defaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "boutique ephemere 63 rue jean jaures 11370 leucate¤oulibo hameau de cabezac 11120 bize minervois¤moulin d aude 8 le moulin neuf 11300 alet les bains",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:36:05+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23886/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23886/interne",
+      "image": "https://rappel.conso.gouv.fr/image/28066e34-05e5-462f-8cad-4de7a8c61a7f.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23886/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23884",
+      "rappel_guid": "3119ea5e-4ace-482e-a7f6-d2d8907a9203",
+      "numero_fiche": "2026-10-0212",
+      "libelle": "pâté de foie pur cochon 180 g",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté de foie pur cochon 180 g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "defaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤oulibo\thameau de cabezac\t11120\tbize minervois¤les papilles\t9 avenue de balcère\t66210\tles angles¤",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:35:44+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23884/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23884/interne",
+      "image": "https://rappel.conso.gouv.fr/image/78c59782-cf8c-43fa-881f-157025e208a3.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23884/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23896",
+      "rappel_guid": "6ad3d6c0-0774-48a0-b6df-1485bfe3c7bf",
+      "numero_fiche": "2026-10-0224",
+      "libelle": "pâté de foie aux cèpes pur cochon",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté de foie aux cèpes pur cochon",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "défaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤oulibo\thameau de cabezac\t11120\tbize minervois¤art vin 3\t23 bd charles degaulle\t11500\tquillan¤coop agri vitic agric limoux\t16 avenue du pont de france\t11300\tlimoux",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:35:28+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23896/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23896/interne",
+      "image": "https://rappel.conso.gouv.fr/image/dca33420-52ca-450a-9fbf-f6ccc1a5b3f1.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23896/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23879",
+      "rappel_guid": "5c9e9855-d1bf-40b8-9937-0e733d4225e0",
+      "numero_fiche": "2026-10-0207",
+      "libelle": "rillette pur cochon 180g",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "rillette pur cochon 180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "anomalie de conditionnement",
+      "risques_encourus": "clostridium botulinum (agent responsable du botulisme)",
+      "preconisations_sanitaires": "le botulisme est une maladie rare qui résulte le plus souvent de la consommation d'un aliment contaminé contenant de la toxine botulique produite par clostridium botulinum. cette toxine se développe notamment dans les conserves ou les produits de charcuterie de fabrication familiale ou artisanale pour lesquelles le procédé de stérilisation n'a pas été maîtrisé ou la chaîne du froid n’a pas été respectée. l'intoxication botulique est caractérisée par des signes neurologiques : sensation de vision floue, paupières tombantes, troubles de la parole, difficulté à avaler, sécheresse de la bouche, faiblesse musculaire. les symptômes apparaissent généralement 12 à 72 heures après l'ingestion d'un aliment contaminé, mais ils peuvent se développer plus tardivement jusqu'à 10 jours. les personnes qui auraient consommé les produits concernés par ce rappel et qui présenteraient ce type de symptômes neurologiques dans les 10 jours après consommation sont invitées à consulter sans délai leur médecin traitant, en lui signalant cette consommation ainsi que le lieu et la date d'achat. en l’absence de symptôme dans les 10 jours après la dernière consommation de ces produits, il est inutile de s’inquiéter et de consulter un médecin.¤en complément, nous suggérons de consulter https://agriculture.gouv.fr/le-botulisme.¤d'une façon générale, les autorités sanitaires rappellent que pour éviter tout risque sanitaire, et notamment le botulisme, il est impératif de respecter les préconisations de conservation (températures, durées) définies par les fabricants des aliments.¤au moindre doute sur la qualité sanitaire d'un produit (aspect, odeur...), il convient de ne pas le consommer. la fabrication de conserves, que ce soit dans un cadre familial ou professionnel, nécessite des connaissances, un savoir-faire et des matériels adaptés.¤",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤la ferme côté producteurs\t21 rue rené panhard\t11100\tnarbonne¤caval limoux\t16 av du pont de france\t11300\tlimoux¤la boutique ephemere\t63 rue jean jaures\t11370 leucate",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:35:13+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23879/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23879/interne",
+      "image": "https://rappel.conso.gouv.fr/image/3b93ac91-490a-4954-b589-57ec19de6ff6.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23879/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23881",
+      "rappel_guid": "54723b82-8e80-457b-9e13-27282fa5fff5",
+      "numero_fiche": "2026-10-0209",
+      "libelle": "pâté de lapin 180g",
+      "marque_produit": "le cochon du madres",
+      "modeles_ou_references": "pâté de lapin 180g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "défaut de fabrication",
+      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "les papilles\t9 avenue de balcère\t66210\tles angles¤oulibo\thameau de cabezac\t11120\tbize minervois¤au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤",
+      "zone_geographique_de_vente": "occitanie",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-10-22T07:34:50+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23881/interne",
+      "image": "https://rappel.conso.gouv.fr/image/56ca9127-7b11-49bf-adee-92c1ab9b9fae.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
+      "verified_at": "2026-10-24T08:58:04.626Z",
+      "published_at": "2026-10-23T07:27:08.000Z"
     }
   ]
 }

@@ -3,8 +3,23 @@
  * Rappel Alertes — fetch RappelConso open data + generate static pages
  * Source: https://data.economie.gouv.fr (Licence Ouverte / Open Licence 2.0)
  * Dataset: rappelconso-v2-gtin-espaces
+ *
+ * MODE FILE D'ATTENTE (depuis le 24/10/2026, choix de Carole : 1 fiche / jour max)
+ * - data/rappels.json = liste de TOUTES les fiches déjà publiées (jamais supprimées).
+ *   Chaque fiche porte `published_at` (date de mise en ligne sur ce site).
+ * - À chaque exécution : on récupère les FETCH_LIMIT rappels les plus récents de l'API,
+ *   on écarte ceux déjà publiés et ceux aux champs essentiels incomplets, puis on
+ *   publie au plus MAX_NEW (défaut 1) nouvelle(s) fiche(s).
+ * - Priorité : 1) risque grave (listeria, salmonelle, E. coli, botulisme, blessure,
+ *   brûlure, électrocution, incendie, étouffement…), 2) date de publication la plus récente.
+ * - Garde-fou : si une fiche a déjà été publiée le même jour UTC (published_at),
+ *   rien n'est ajouté (un lancement manuel ou double ne dépasse pas la limite).
+ * - Les fiches publiées gardent leurs données stockées ; index, catégories, sitemap
+ *   sont régénérés de façon déterministe (pas de diff les jours sans nouvelle fiche).
+ * Variables d'env : MAX_NEW (défaut 1), DRY_RUN=1 (n'écrit rien, affiche la file),
+ *   RA_NOW (ISO, pour tests uniquement : simule la date courante).
  */
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, appendFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -12,8 +27,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const API =
   "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records";
-const FETCH_LIMIT = 50;
-const FICHE_LIMIT = 20;
+const FETCH_LIMIT = 100; // fenêtre de candidats (rappels les plus récents de l'API)
+const QUEUE_MAX_AGE_DAYS = 30; // on ne publie pas un rappel de plus de 30 jours
+const MAX_NEW = Math.max(0, parseInt(process.env.MAX_NEW ?? "1", 10) || 0);
+const DRY_RUN = process.env.DRY_RUN === "1";
+const NOW = process.env.RA_NOW ? new Date(process.env.RA_NOW) : new Date();
+const SEVERE_RE =
+  /listeria|salmonell|e\.?\s?coli|stec|botuli|clostridium|bless|br[uû]lure|[ée]lectrocution|[ée]lectrisation|incendie|[ée]touffement|suffocation|asphyxi|intoxication|coupure/i;
 const SITE_NAME = "Rappel Alertes";
 const SITE_TAGLINE = "Alertes de rappels produits — sources officielles";
 const SITE_BASE = "/rappel-alertes"; // GitHub Pages project site
@@ -172,6 +192,21 @@ function normalizeRecord(raw, verifiedAt) {
     source_url: sourceUrl,
     verified_at: verifiedAt,
   };
+}
+
+async function fetchApi(url) {
+  const res = await fetch(url, {
+    headers: { Accept: "application/json", "User-Agent": "RappelAlertes/0.1 (Mogul; open-data reuse)" },
+  });
+  if (!res.ok) throw new Error(`API HTTP ${res.status}: ${await res.text()}`);
+  return res.json();
+}
+
+async function fetchByIds(ids) {
+  if (!ids.length) return [];
+  const where = encodeURIComponent(`id in (${ids.map((i) => Number(i)).join(",")})`);
+  const data = await fetchApi(`${API}?where=${where}&limit=100`);
+  return data.results || [];
 }
 
 async function fetchRecent() {
@@ -403,7 +438,7 @@ function categoryPageHtml(cat, records, affiliateCfg) {
     </nav>
     <header class="page-head">
       <h1>${esc(cat.name)}</h1>
-      <p class="muted">${records.length} rappel${records.length > 1 ? "s" : ""} dans ce lot</p>
+      <p class="muted">${records.length} rappel${records.length > 1 ? "s" : ""} publié${records.length > 1 ? "s" : ""} sur ce site</p>
     </header>
     <div class="cards">${cards}</div>`;
   return layout({
@@ -658,31 +693,89 @@ function writeSearchJs() {
   writeFileSync(join(ROOT, "assets/js/search.js"), js);
 }
 
-async function main() {
-  mkdirSync(join(ROOT, "data"), { recursive: true });
-  mkdirSync(join(ROOT, "fiches"), { recursive: true });
-  mkdirSync(join(ROOT, "categories"), { recursive: true });
-  mkdirSync(join(ROOT, "assets/css"), { recursive: true });
-  mkdirSync(join(ROOT, "assets/js"), { recursive: true });
-
-  const verifiedAt = new Date().toISOString();
-  const affiliateCfg = loadAffiliateConfig();
-  console.log("Fetching RappelConso…");
-  console.log("Affiliate amazon:", affiliateCfg?.amazon?.enabled, "tag:", affiliateCfg?.amazon?.amazon_tag);
-  const { total, results } = await fetchRecent();
-  const byId = new Map();
-  for (const raw of results) {
-    const rec = normalizeRecord(raw, verifiedAt);
-    if (!rec.id || !rec.lien_officiel) continue;
-    if (!byId.has(rec.id)) byId.set(rec.id, rec);
-  }
-  const all = [...byId.values()].sort((a, b) =>
-    String(b.date_publication).localeCompare(String(a.date_publication))
+// Champs essentiels pour publier une fiche utile (sinon le rappel reste hors file).
+function isComplete(raw, rec) {
+  return Boolean(
+    rec.id &&
+      rec.lien_officiel &&
+      raw.libelle &&
+      raw.categorie_produit &&
+      rec.date_publication &&
+      (rec.risques_encourus || rec.motif_rappel) &&
+      rec.conduites_a_tenir.length
   );
-  const fiches = all.slice(0, FICHE_LIMIT);
+}
+
+function isSevere(r) {
+  return SEVERE_RE.test(`${r.risques_encourus || ""} ${r.motif_rappel || ""}`);
+}
+
+function byDateDesc(a, b) {
+  return String(b.date_publication).localeCompare(String(a.date_publication));
+}
+
+function loadPublished() {
+  const p = join(ROOT, "data/rappels.json");
+  if (!existsSync(p)) return { meta: null, records: [] };
+  const meta = JSON.parse(readFileSync(p, "utf8"));
+  return { meta, records: meta.records || [] };
+}
+
+async function main() {
+  for (const d of ["data", "fiches", "categories", "assets/css", "assets/js"]) {
+    mkdirSync(join(ROOT, d), { recursive: true });
+  }
+
+  const nowIso = NOW.toISOString();
+  const todayUtc = nowIso.slice(0, 10);
+  const affiliateCfg = loadAffiliateConfig();
+  console.log(`Fetching RappelConso… (MAX_NEW=${MAX_NEW}${DRY_RUN ? ", DRY_RUN" : ""})`);
+  console.log("Affiliate amazon:", affiliateCfg?.amazon?.enabled, "tag:", affiliateCfg?.amazon?.amazon_tag);
+
+  const { meta: oldMeta, records: published } = loadPublished();
+  const publishedIds = new Set(published.map((r) => String(r.id)));
+
+  // Fiches HTML déjà en ligne mais absentes du JSON : on les réintègre depuis l'API
+  // (on ne supprime jamais une fiche en ligne).
+  const orphanIds = readdirSync(join(ROOT, "fiches"))
+    .filter((f) => /^\d+\.html$/.test(f))
+    .map((f) => f.replace(/\.html$/, ""))
+    .filter((id) => !publishedIds.has(id));
+  if (orphanIds.length) {
+    const raws = await fetchByIds(orphanIds);
+    for (const raw of raws) {
+      const rec = normalizeRecord(raw, nowIso);
+      if (publishedIds.has(rec.id)) continue;
+      rec.published_at = null; // date de mise en ligne inconnue (fiche héritée)
+      published.push(rec);
+      publishedIds.add(rec.id);
+    }
+    console.log(`Fiches orphelines réintégrées : ${raws.length}/${orphanIds.length}`);
+  }
+
+  const { total, results } = await fetchRecent();
+  const minDate = new Date(NOW.getTime() - QUEUE_MAX_AGE_DAYS * 86400e3).toISOString();
+  const seen = new Set();
+  const queue = [];
+  let incomplete = 0;
+  for (const raw of results) {
+    const rec = normalizeRecord(raw, nowIso);
+    if (!rec.id || seen.has(rec.id) || publishedIds.has(rec.id)) continue;
+    seen.add(rec.id);
+    if (!isComplete(raw, rec)) { incomplete += 1; continue; }
+    if (String(rec.date_publication) < minDate) continue;
+    queue.push(rec);
+  }
+  queue.sort((a, b) => (isSevere(b) - isSevere(a)) || byDateDesc(a, b));
+
+  const publishedToday = published.filter((r) => String(r.published_at || "").slice(0, 10) === todayUtc);
+  const allowance = Math.max(0, MAX_NEW - publishedToday.length);
+  const added = DRY_RUN ? [] : queue.slice(0, allowance);
+  for (const r of added) r.published_at = nowIso;
+  const all = [...published, ...added].sort(byDateDesc);
 
   const catMap = new Map();
-  for (const r of fiches) {
+  for (const r of all) {
     const name = r.categorie_produit;
     const slug = slugify(name);
     if (!catMap.has(slug)) catMap.set(slug, { name, slug, count: 0, items: [] });
@@ -690,53 +783,81 @@ async function main() {
     c.count += 1;
     c.items.push(r);
   }
-  const cats = [...catMap.values()].sort((a, b) => b.count - a.count);
+  const cats = [...catMap.values()].sort((a, b) => b.count - a.count || a.slug.localeCompare(b.slug));
+
+  const recordsChanged = JSON.stringify(all) !== JSON.stringify(oldMeta?.records || []);
+  const generatedAt = recordsChanged || !oldMeta?.generated_at ? nowIso : oldMeta.generated_at;
+  const apiTotal = recordsChanged ? total : oldMeta?.api_total_count ?? total;
+
+  const summary = {
+    ok: true,
+    dry_run: DRY_RUN,
+    today_utc: todayUtc,
+    api_total: total,
+    fetched: results.length,
+    published_total: all.length,
+    published_today_before_run: publishedToday.map((r) => r.id),
+    added: added.map((r) => ({ id: r.id, libelle: r.libelle, severe: isSevere(r), lien: r.lien_officiel })),
+    blocked_by_daily_guard: queue.length > 0 && allowance === 0,
+    queue_count: queue.length - added.length,
+    queue_next: queue.slice(added.length, added.length + 5).map((r) => ({ id: r.id, libelle: r.libelle, severe: isSevere(r) })),
+    incomplete_skipped: incomplete,
+    amazon_tag: affiliateCfg?.amazon?.amazon_tag || null,
+    categories: cats.map((c) => `${c.slug}:${c.count}`),
+  };
+
+  if (DRY_RUN) {
+    console.log(JSON.stringify(summary, null, 2));
+    return;
+  }
 
   const payload = {
-    generated_at: verifiedAt,
+    generated_at: generatedAt,
     source: {
       dataset: "rappelconso-v2-gtin-espaces",
       api: API,
       license: "Licence Ouverte 2.0",
       portal: "https://rappel.conso.gouv.fr/",
     },
-    api_total_count: total,
-    count: fiches.length,
+    publication_policy: `file d'attente : au plus ${MAX_NEW} nouvelle(s) fiche(s) par jour UTC (published_at)`,
+    api_total_count: apiTotal,
+    count: all.length,
     categories: cats.map(({ name, slug, count }) => ({ name, slug, count })),
-    records: fiches,
+    records: all,
   };
   writeFileSync(join(ROOT, "data/rappels.json"), JSON.stringify(payload, null, 2));
 
   writeCss();
   writeSearchJs();
-  writeFileSync(join(ROOT, "index.html"), indexHtml(fiches, cats, affiliateCfg));
+  writeFileSync(join(ROOT, "index.html"), indexHtml(all, cats, affiliateCfg));
   writeFileSync(join(ROOT, "a-propos.html"), aboutHtml({
-    generated_at: verifiedAt,
-    fiche_count: fiches.length,
-    api_total_count: total,
+    generated_at: generatedAt,
+    fiche_count: all.length,
+    api_total_count: apiTotal,
   }, affiliateCfg));
   writeFileSync(join(ROOT, "categories/index.html"), categoryIndexHtml(cats, affiliateCfg));
   for (const cat of cats) {
     writeFileSync(join(ROOT, `categories/${cat.slug}.html`), categoryPageHtml(cat, cat.items, affiliateCfg));
   }
   let amazonCtas = 0;
-  for (const r of fiches) {
+  for (const r of all) {
     if (shouldShowAmazonCta(r, affiliateCfg)) amazonCtas += 1;
     writeFileSync(join(ROOT, `fiches/${r.id}.html`), ficheHtml(r, affiliateCfg));
   }
 
+  const day = (iso) => String(iso || generatedAt).slice(0, 10);
   const sitemapUrls = [
-    "index.html",
-    "a-propos.html",
-    "categories/index.html",
-    ...cats.map((c) => `categories/${c.slug}.html`),
-    ...fiches.map((r) => `fiches/${r.id}.html`),
+    ["index.html", generatedAt],
+    ["a-propos.html", generatedAt],
+    ["categories/index.html", generatedAt],
+    ...cats.map((c) => [`categories/${c.slug}.html`, generatedAt]),
+    ...all.map((r) => [`fiches/${r.id}.html`, r.published_at || r.verified_at]),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls
   .map(
-    (u) => `  <url><loc>https://caro123-create.github.io/rappel-alertes/${u}</loc><lastmod>${verifiedAt.slice(0, 10)}</lastmod></url>`
+    ([u, d]) => `  <url><loc>https://caro123-create.github.io/rappel-alertes/${u}</loc><lastmod>${day(d)}</lastmod></url>`
   )
   .join("\n")}
 </urlset>
@@ -747,18 +868,18 @@ ${sitemapUrls
     `User-agent: *\nAllow: /\nSitemap: https://caro123-create.github.io/rappel-alertes/sitemap.xml\n`
   );
 
-  console.log(JSON.stringify({
-    ok: true,
-    api_total: total,
-    fetched: results.length,
-    unique: all.length,
-    fiches: fiches.length,
-    amazon_ctas: amazonCtas,
-    amazon_tag: affiliateCfg?.amazon?.amazon_tag || null,
-    categories: cats.map((c) => `${c.slug}:${c.count}`),
-    sample_links: fiches.slice(0, 3).map((r) => r.lien_officiel),
-    verified_at: verifiedAt,
-  }, null, 2));
+  summary.amazon_ctas = amazonCtas;
+  console.log(JSON.stringify(summary, null, 2));
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const lines = [
+      `### Rappel Alertes — ${todayUtc}`,
+      `- Fiches publiées au total : ${all.length}`,
+      `- Ajoutée(s) : ${added.length ? added.map((r) => `${r.id} ${r.libelle}`).join(", ") : "aucune"}`,
+      `- Garde-fou du jour actif : ${summary.blocked_by_daily_guard ? "oui" : "non"}`,
+      `- En file d'attente : ${summary.queue_count}`,
+    ];
+    appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
+  }
 }
 
 main().catch((err) => {
