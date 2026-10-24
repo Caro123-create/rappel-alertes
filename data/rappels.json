@@ -1,31 +1,295 @@
 {
-  "generated_at": "2026-10-23T09:44:38.057Z",
+  "generated_at": "2026-10-24T07:00:54.797Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
     "license": "Licence Ouverte 2.0",
     "portal": "https://rappel.conso.gouv.fr/"
   },
-  "api_total_count": 19096,
+  "api_total_count": 19104,
   "count": 20,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 18
+      "count": 16
+    },
+    {
+      "name": "appareils électriques, outils",
+      "slug": "appareils-electriques-outils",
+      "count": 2
+    },
+    {
+      "name": "sports-loisirs",
+      "slug": "sports-loisirs",
+      "count": 1
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
       "slug": "bebes-enfants-hors-alimentaire",
       "count": 1
-    },
-    {
-      "name": "appareils électriques, outils",
-      "slug": "appareils-electriques-outils",
-      "count": 1
     }
   ],
   "records": [
+    {
+      "id": "23922",
+      "rappel_guid": "d71f5db3-3467-439a-a7cf-e189365fc049",
+      "numero_fiche": "2026-10-0249",
+      "libelle": "blanquette st jacques",
+      "marque_produit": "sk",
+      "modeles_ou_references": "..",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "listeria monocytogenes détectée dans les noix de st jacques de notre fournisseur celtarmor",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "détruire le produit"
+      ],
+      "distributeurs": "e. leclerc le relecq kerhuon",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T18:00:16+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23922/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23922/interne",
+      "image": "https://rappel.conso.gouv.fr/image/fe82063a-67f4-47c6-903b-c59af765f3d3.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23922/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23923",
+      "rappel_guid": "a561d057-abc4-4266-a49f-839767d180ab",
+      "numero_fiche": "2026-10-0250",
+      "libelle": "noix de saint-jacques fraîches baie de saint brieuc, sans corail, 200g",
+      "marque_produit": "filière qualité carrefour",
+      "modeles_ou_references": "noix de saint-jacques fraîches baie de saint brieuc, sans corail filière qualité carrefour - barquette 200g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "produits de la pêche et d'aquaculture",
+      "motif_rappel": "présence de listeria monocytogenes",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "carrefour",
+      "zone_geographique_de_vente": "ille-et-vilaine (35)|hauts-de-seine (92)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T17:19:10+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23923/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23923/interne",
+      "image": "https://rappel.conso.gouv.fr/image/99aadbe0-07e5-435d-8e75-534a929f7930.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23923/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23925",
+      "rappel_guid": "bccc1e1d-31df-4b64-aab8-e6f3327a8163",
+      "numero_fiche": "2026-10-0252",
+      "libelle": "tempeh artisanal frais et bio du diois",
+      "marque_produit": "les culotté.e.s",
+      "modeles_ou_references": "tempeh de pois chiches¤tempeh de lentilles¤tempeh de soja",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "autres",
+      "motif_rappel": "analyses microbiologiques au dessus des normes en vigueur, sur le lot précédent. retrait des produits de ce lot par précaution.",
+      "risques_encourus": "bacillus cereus|staphylococcus aureus (agent responsable d'intoxination staphylococcique)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les bacillus cereus se traduisent soit une diarrhée souvent accompagnée de douleurs abdominales, de nausées et parfois de fièvre survenant dans les 8 à 16 heures après ingestion de l'aliment contaminé, soit par des vomissements survenant dans les 5 heures après consommation. ces symptômes peuvent être aggravés chez les personnes sensibles ou immunodéprimées.|les toxi-infections alimentaires causées par les entérotoxine staphylococciques se traduisent par des troubles gastro-intestinaux (vomissements principalement) apparaissant dans les heures qui suivent l'ingestion et disparaissant en général rapidement.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "- epicerie gervanne-sye (26)¤- epicerie la carline (26)¤- epicerie la chèvre et le chou (07)¤- epicerie la p'tite distrib (69)¤- epicerie géniale (26)¤- epicerie la super epicerie (69)¤- epicerie la milpa (26)¤- restaurant yamaneko (26)",
+      "zone_geographique_de_vente": "auvergne-rhône-alpes",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T17:03:09+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23925/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23925/interne",
+      "image": "https://rappel.conso.gouv.fr/image/94f060a1-2260-4df1-8908-4b2e6d50f2dd.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23925/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23924",
+      "rappel_guid": "91c44937-9ce5-41c7-b72b-d3bbe8a7886c",
+      "numero_fiche": "2026-10-0251",
+      "libelle": "coque très grosse pêche vivante",
+      "marque_produit": "/",
+      "modeles_ou_references": "coque très grosse pêche vivante",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "produits de la pêche et d'aquaculture",
+      "motif_rappel": "dénombrement e. coli >230/100g",
+      "risques_encourus": "escherichia coli",
+      "preconisations_sanitaires": "les escherichia coli peuvent entraîner dans les 3 jours qui suivent la consommation, des gastro-entérites marquées par des douleurs abdominales et des diarrhées (éventuellement accompagnées de sang), accompagnées ou non de fièvre. les personnes qui auraient consommé les produits mentionnés ci-dessus et qui présenteraient ce type de symptômes sont invitées à consulter sans délai leur médecin traitant en lui signalant cette consommation et la nature du germe contaminant.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "metro",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T16:17:54+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23924/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23924/interne",
+      "image": "https://rappel.conso.gouv.fr/image/2cd6d7c4-9771-48df-b3e8-2aeb079a392d.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23924/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23921",
+      "rappel_guid": "2f1c50ff-9159-4ad4-8a96-a56bf3c2984d",
+      "numero_fiche": "2026-10-0248",
+      "libelle": "crackers au wasabi 125g golden turtle",
+      "marque_produit": "golden turtle",
+      "modeles_ou_references": "crackers au wasabi 125g golden turtle par 10",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "teneur élevée en esters glycidyliques d’acides gras",
+      "risques_encourus": "autres contaminants chimiques",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "marché asiatique + gms - voir la liste des clients en pj",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T16:08:33+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23921/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23921/interne",
+      "image": "https://rappel.conso.gouv.fr/image/db7e2f64-07ea-4c4d-9c93-95cf5df67985.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23921/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23915",
+      "rappel_guid": "c298539d-f5be-4e1d-ba14-d901645ddad2",
+      "numero_fiche": "2026-10-0243",
+      "libelle": "assistance électrique sup kayak et batterie assistance électrique",
+      "marque_produit": "itiwit",
+      "modeles_ou_references": "assistance électrique sup kayak: 8771733¤batterie assistance électrique: 8853862",
+      "categorie_produit": "sports-loisirs",
+      "sous_categorie_produit": "equipements de sports et de loisirs",
+      "motif_rappel": "une infiltration d'eau à l'intérieur de la batterie peut provoquer une forte surchauffe de celle-ci, entraînant un risque de départ de feu spontané, voire une explosion",
+      "risques_encourus": "incendie",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "decathlon",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T14:41:59+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23915/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23915/interne",
+      "image": "https://rappel.conso.gouv.fr/image/630fc2e4-e5ba-4919-9666-277ae004d30a.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23915/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23917",
+      "rappel_guid": "9d638fc9-7403-45b6-90f1-8219d38e3cc7",
+      "numero_fiche": "2026-10-0198",
+      "libelle": "tronçonneuse thermique sterwins 56cm3, guide de 45cm - pcs2-45es.4",
+      "marque_produit": "sterwins",
+      "modeles_ou_references": "tronçonneuse thermique  sterwins pcs2-45es.4  – 45cm",
+      "categorie_produit": "appareils électriques, outils",
+      "sous_categorie_produit": "machines",
+      "motif_rappel": "le protège chaîne peut se desserrer pendant l'usage. la chaîne risque alors de se détendre et de provoquer des blessures",
+      "risques_encourus": "blessures",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "leroy merlin¤weldom",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "réparation",
+      "date_publication": "2026-10-23T14:12:46+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23917/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23917/interne",
+      "image": "https://rappel.conso.gouv.fr/image/2e3abb43-99b7-4d3c-9f68-5981784859f3.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23917/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23918",
+      "rappel_guid": "d71d11bb-67a0-40c6-914d-894deea2471f",
+      "numero_fiche": "2026-10-0245",
+      "libelle": "tete de veau en gelee",
+      "marque_produit": "ferme de larcher",
+      "modeles_ou_references": "ferme de larcher",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "risque de toxi- infections alimentaires causées par la présence d’asr se traduisent par des crampes et douleurs abdominales, et une diarrhée.",
+      "risques_encourus": "autres contaminants biologiques",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "détruire le produit"
+      ],
+      "distributeurs": "leclerc cahors, intermarche 46300 gourdon, proxi 46310 concores, vival 46310 st germain du bel air, le meilleur de nos fermes 46090lamagdelaine",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T13:11:20+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23918/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23918/interne",
+      "image": "https://rappel.conso.gouv.fr/image/b25d0549-dad8-4c5d-a88b-1dd0f4cb7b46.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23918/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
+    {
+      "id": "23912",
+      "rappel_guid": "21d98912-0f64-4531-807b-d7264f700b38",
+      "numero_fiche": "2026-10-0240",
+      "libelle": "gratin dauphinois",
+      "marque_produit": "auchan (en vente assistée)",
+      "modeles_ou_references": "gratin dauphinois",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "présence de listeria monocytogenes (agent responsable de la listériose)",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur"
+      ],
+      "distributeurs": "uniquement le hypermarché auchan guilherand-granges (valence)",
+      "zone_geographique_de_vente": "ardeche (07)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-23T11:21:06+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23912/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23912/interne",
+      "image": "https://rappel.conso.gouv.fr/image/e7d52062-9529-437d-b02c-703c787b542a.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23912/interne",
+      "verified_at": "2026-10-24T07:00:54.797Z"
+    },
     {
       "id": "23806",
       "rappel_guid": "8150c6ed-aa4f-4388-a293-366b4525a749",
@@ -52,7 +316,7 @@
       "image": "https://rappel.conso.gouv.fr/image/464c01fa-be9d-455e-8e61-205d6782721f.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23806/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23914",
@@ -80,7 +344,7 @@
       "image": "https://rappel.conso.gouv.fr/image/52101e04-2c1d-4783-a85c-1b2fe7294689.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23914/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23893",
@@ -108,7 +372,7 @@
       "image": "https://rappel.conso.gouv.fr/image/de198c38-74b1-487c-933b-69632ac805c0.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23893/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23910",
@@ -136,7 +400,7 @@
       "image": "https://rappel.conso.gouv.fr/image/dfa0b2cb-6b84-4846-b7b7-e6c94a74b807.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23910/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23894",
@@ -164,7 +428,7 @@
       "image": "https://rappel.conso.gouv.fr/image/5b65632d-d27e-4c5a-8c66-93c98b2a9357.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23894/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23880",
@@ -192,7 +456,7 @@
       "image": "https://rappel.conso.gouv.fr/image/9304e786-cac1-495b-91b6-4300fd7e5738.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23880/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23913",
@@ -222,7 +486,7 @@
       "image": "https://rappel.conso.gouv.fr/image/8147f684-f46e-4e87-ad95-d09e34ebf30b.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23913/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23904",
@@ -250,7 +514,7 @@
       "image": "https://rappel.conso.gouv.fr/image/d68992bd-71ab-4491-8fef-2e482e216003.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23904/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23903",
@@ -278,7 +542,7 @@
       "image": "https://rappel.conso.gouv.fr/image/726ed0e2-e4b7-4ba9-a72c-a24d309eec0d.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23903/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23911",
@@ -306,7 +570,7 @@
       "image": "https://rappel.conso.gouv.fr/image/29f81fca-ed11-4763-8af0-168d899b6d24.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23911/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     },
     {
       "id": "23907",
@@ -336,259 +600,7 @@
       "image": "https://rappel.conso.gouv.fr/image/764d2566-590f-4556-9fd8-3a9a9c2eb5bf.jpg",
       "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23907/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23887",
-      "rappel_guid": "fcc14bc0-e27a-44b9-ad02-29c6d73fb881",
-      "numero_fiche": "2026-10-0215",
-      "libelle": "boudin à l'oignon",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "boudin à l'oignon 180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "défaut de fabrication.",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "oulibo\thameau de cabezac\t11120\tbize minervois¤",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:37:23+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23887/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23887/interne",
-      "image": "https://rappel.conso.gouv.fr/image/996db1bb-f9c5-40a0-b2b6-667bdeb1c99c.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23887/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23883",
-      "rappel_guid": "8e3cb9e2-3b96-4a3f-bb73-8f522c3d217e",
-      "numero_fiche": "2026-10-0211",
-      "libelle": "pâté pur cochon 180g",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté pur cochon 180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "défaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "aucomptoirdesproducteurs\t2 rue gustave eiffel 11200 lezignan¤lafermecôtéproducteurs 21 rue rené panhard 11100 narbonne¤oulibo hameau de cabezac 11120 bize minervois¤les papilles 9 av de balcère 66210 lesangles¤enviedusud 14 place 31 toulouse",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:37:08+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23883/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23883/interne",
-      "image": "https://rappel.conso.gouv.fr/image/25df9675-64b6-45b8-8d59-6131cfa6d21c.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23883/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23882",
-      "rappel_guid": "943b9108-f6e0-4834-8a68-0b54a77941ac",
-      "numero_fiche": "2026-10-0210",
-      "libelle": "boudin pur cochon 180 g",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "boudin pur cochon 180 g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "défaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "oulibo\thameau de cabezac\t11120\tbize minervois¤",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:36:54+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23882/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23882/interne",
-      "image": "https://rappel.conso.gouv.fr/image/9553321e-666f-4958-a8ac-cb679cfa9b59.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23882/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23885",
-      "rappel_guid": "b5c0b7a0-8360-405b-87eb-17bf36fb2ea4",
-      "numero_fiche": "2026-10-0213",
-      "libelle": "pâté de foie aux cèpes",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté de foie aux cèpes  180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "defaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "au comptoir des producteurs 2 rue gustave eiffel 11200 lezignan¤oulibo hameau de cabezac 11120 bize minervois¤les papilles 9 av balcere 66210 lesangles",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:36:26+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23885/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23885/interne",
-      "image": "https://rappel.conso.gouv.fr/image/8c625a71-c2b3-4c52-9bde-3f3d53883c06.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23885/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23886",
-      "rappel_guid": "8f0df89c-2a2f-4168-a5c4-79ac9c257d64",
-      "numero_fiche": "2026-10-0214",
-      "libelle": "pâté au cognac",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté au cognac 180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "defaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "boutique ephemere 63 rue jean jaures 11370 leucate¤oulibo hameau de cabezac 11120 bize minervois¤moulin d aude 8 le moulin neuf 11300 alet les bains",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:36:05+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23886/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23886/interne",
-      "image": "https://rappel.conso.gouv.fr/image/28066e34-05e5-462f-8cad-4de7a8c61a7f.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23886/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23884",
-      "rappel_guid": "3119ea5e-4ace-482e-a7f6-d2d8907a9203",
-      "numero_fiche": "2026-10-0212",
-      "libelle": "pâté de foie pur cochon 180 g",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté de foie pur cochon 180 g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "defaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤oulibo\thameau de cabezac\t11120\tbize minervois¤les papilles\t9 avenue de balcère\t66210\tles angles¤",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:35:44+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23884/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23884/interne",
-      "image": "https://rappel.conso.gouv.fr/image/78c59782-cf8c-43fa-881f-157025e208a3.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23884/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23896",
-      "rappel_guid": "6ad3d6c0-0774-48a0-b6df-1485bfe3c7bf",
-      "numero_fiche": "2026-10-0224",
-      "libelle": "pâté de foie aux cèpes pur cochon",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté de foie aux cèpes pur cochon",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "défaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤oulibo\thameau de cabezac\t11120\tbize minervois¤art vin 3\t23 bd charles degaulle\t11500\tquillan¤coop agri vitic agric limoux\t16 avenue du pont de france\t11300\tlimoux",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:35:28+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23896/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23896/interne",
-      "image": "https://rappel.conso.gouv.fr/image/dca33420-52ca-450a-9fbf-f6ccc1a5b3f1.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23896/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23879",
-      "rappel_guid": "5c9e9855-d1bf-40b8-9937-0e733d4225e0",
-      "numero_fiche": "2026-10-0207",
-      "libelle": "rillette pur cochon 180g",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "rillette pur cochon 180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "anomalie de conditionnement",
-      "risques_encourus": "clostridium botulinum (agent responsable du botulisme)",
-      "preconisations_sanitaires": "le botulisme est une maladie rare qui résulte le plus souvent de la consommation d'un aliment contaminé contenant de la toxine botulique produite par clostridium botulinum. cette toxine se développe notamment dans les conserves ou les produits de charcuterie de fabrication familiale ou artisanale pour lesquelles le procédé de stérilisation n'a pas été maîtrisé ou la chaîne du froid n’a pas été respectée. l'intoxication botulique est caractérisée par des signes neurologiques : sensation de vision floue, paupières tombantes, troubles de la parole, difficulté à avaler, sécheresse de la bouche, faiblesse musculaire. les symptômes apparaissent généralement 12 à 72 heures après l'ingestion d'un aliment contaminé, mais ils peuvent se développer plus tardivement jusqu'à 10 jours. les personnes qui auraient consommé les produits concernés par ce rappel et qui présenteraient ce type de symptômes neurologiques dans les 10 jours après consommation sont invitées à consulter sans délai leur médecin traitant, en lui signalant cette consommation ainsi que le lieu et la date d'achat. en l’absence de symptôme dans les 10 jours après la dernière consommation de ces produits, il est inutile de s’inquiéter et de consulter un médecin.¤en complément, nous suggérons de consulter https://agriculture.gouv.fr/le-botulisme.¤d'une façon générale, les autorités sanitaires rappellent que pour éviter tout risque sanitaire, et notamment le botulisme, il est impératif de respecter les préconisations de conservation (températures, durées) définies par les fabricants des aliments.¤au moindre doute sur la qualité sanitaire d'un produit (aspect, odeur...), il convient de ne pas le consommer. la fabrication de conserves, que ce soit dans un cadre familial ou professionnel, nécessite des connaissances, un savoir-faire et des matériels adaptés.¤",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤la ferme côté producteurs\t21 rue rené panhard\t11100\tnarbonne¤caval limoux\t16 av du pont de france\t11300\tlimoux¤la boutique ephemere\t63 rue jean jaures\t11370 leucate",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:35:13+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23879/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23879/interne",
-      "image": "https://rappel.conso.gouv.fr/image/3b93ac91-490a-4954-b589-57ec19de6ff6.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23879/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
-    },
-    {
-      "id": "23881",
-      "rappel_guid": "54723b82-8e80-457b-9e13-27282fa5fff5",
-      "numero_fiche": "2026-10-0209",
-      "libelle": "pâté de lapin 180g",
-      "marque_produit": "le cochon du madres",
-      "modeles_ou_references": "pâté de lapin 180g",
-      "categorie_produit": "alimentation",
-      "sous_categorie_produit": "viandes",
-      "motif_rappel": "défaut de fabrication",
-      "risques_encourus": "défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
-      "preconisations_sanitaires": "ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
-      "conduites_a_tenir": [
-        "ne plus consommer",
-        "rapporter le produit au point de vente"
-      ],
-      "distributeurs": "les papilles\t9 avenue de balcère\t66210\tles angles¤oulibo\thameau de cabezac\t11120\tbize minervois¤au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤",
-      "zone_geographique_de_vente": "occitanie",
-      "modalites_de_compensation": "echange",
-      "date_publication": "2026-10-22T07:34:50+00:00",
-      "date_de_fin_de_la_procedure_de_rappel": null,
-      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
-      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23881/interne",
-      "image": "https://rappel.conso.gouv.fr/image/56ca9127-7b11-49bf-adee-92c1ab9b9fae.jpg",
-      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
-      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
-      "verified_at": "2026-10-23T09:44:38.057Z"
+      "verified_at": "2026-10-24T07:00:54.797Z"
     }
   ]
 }
