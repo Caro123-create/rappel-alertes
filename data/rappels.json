@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:58:04.626Z",
+  "generated_at": "2026-10-25T02:55:40.718Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19104,
-  "count": 29,
+  "api_total_count": 19111,
+  "count": 30,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 25
+      "count": 26
     },
     {
       "name": "appareils électriques, outils",
@@ -883,6 +883,37 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23881/interne",
       "verified_at": "2026-10-24T08:58:04.626Z",
       "published_at": "2026-10-23T07:27:08.000Z"
+    },
+    {
+      "id": "23900",
+      "rappel_guid": "8cee8e5e-f5f1-44fc-ad6b-7dfa0d45d209",
+      "numero_fiche": "2026-10-0228",
+      "libelle": "crousty poulet et riz et sauce blanche, sauce blanche épicée, sauce curry",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "crousty poulet et riz et sauce blanche, ¤crousty poulet et riz sauce blanche épicée, ¤crousty poulet et riz sauce curry",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "présence de listéria",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "carrefour hypermarché ermont uniquement",
+      "zone_geographique_de_vente": "val-d'oise (95)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-21T14:55:13+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23900/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23900/interne",
+      "image": "https://rappel.conso.gouv.fr/image/2bdd8899-6e85-4fb3-aca0-ee5fff088291.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23900/interne",
+      "verified_at": "2026-10-25T02:55:40.718Z",
+      "published_at": "2026-10-25T02:55:40.718Z"
     }
   ]
 }
