@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T02:55:40.718Z",
+  "generated_at": "2026-10-26T02:47:49.082Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -8,7 +8,7 @@
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
   "api_total_count": 19111,
-  "count": 30,
+  "count": 31,
   "categories": [
     {
       "name": "alimentation",
@@ -23,7 +23,7 @@
     {
       "name": "bébés-enfants (hors alimentaire)",
       "slug": "bebes-enfants-hors-alimentaire",
-      "count": 1
+      "count": 2
     },
     {
       "name": "sports-loisirs",
@@ -914,6 +914,34 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23900/interne",
       "verified_at": "2026-10-25T02:55:40.718Z",
       "published_at": "2026-10-25T02:55:40.718Z"
+    },
+    {
+      "id": "23899",
+      "rappel_guid": "f3faba35-f3f1-42ef-a7bf-cb4a63bddc4d",
+      "numero_fiche": "2026-10-0227",
+      "libelle": "peluche pâtisserie senteur noël 8 cm",
+      "marque_produit": "keeleco",
+      "modeles_ou_references": "part de gâteau",
+      "categorie_produit": "bébés-enfants (hors alimentaire)",
+      "sous_categorie_produit": "jouets",
+      "motif_rappel": "non conforme et dangereux",
+      "risques_encourus": "étouffement",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "détaillants - fnac - foirfouille - leclerc - jouéclub - maxi bazar - système u ...",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-21T13:55:46+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23899/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23899/interne",
+      "image": "https://rappel.conso.gouv.fr/image/a97bbcc8-92aa-4ade-897c-39b487f6044c.jpg",
+      "nature_juridique_rappel": "imposé par arrêté préfectoral",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23899/interne",
+      "verified_at": "2026-10-26T02:47:49.082Z",
+      "published_at": "2026-10-26T02:47:49.082Z"
     }
   ]
 }
