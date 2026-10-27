@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T02:47:49.082Z",
+  "generated_at": "2026-10-27T02:51:08.391Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,8 +7,8 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19111,
-  "count": 31,
+  "api_total_count": 19114,
+  "count": 32,
   "categories": [
     {
       "name": "alimentation",
@@ -16,13 +16,13 @@
       "count": 26
     },
     {
-      "name": "appareils électriques, outils",
-      "slug": "appareils-electriques-outils",
-      "count": 2
-    },
-    {
       "name": "bébés-enfants (hors alimentaire)",
       "slug": "bebes-enfants-hors-alimentaire",
+      "count": 3
+    },
+    {
+      "name": "appareils électriques, outils",
+      "slug": "appareils-electriques-outils",
       "count": 2
     },
     {
@@ -32,6 +32,36 @@
     }
   ],
   "records": [
+    {
+      "id": "23935",
+      "rappel_guid": "315e127b-c88d-4ebe-8e9a-f61aa983c1bc",
+      "numero_fiche": "2026-10-0108",
+      "libelle": "porte clef crochet",
+      "marque_produit": "i total",
+      "modeles_ou_references": "porte clef crochet itotal¤refs¤xl3451 xl3455b xl3455c xl3455d xl3455e xl3455f xl3455g xl3455h xl3455i ¤xl3442 xl3443 xl3444 xl3445 xl3446 xl3447 xl3448 xl3449 xl3450 xl3452 xl3453",
+      "categorie_produit": "bébés-enfants (hors alimentaire)",
+      "sous_categorie_produit": "jouets",
+      "motif_rappel": "- un élément amovible du jouet (anneau métallique) entre entièrement dans le cylindre d'essai. risque d'ingestion (point 5.1.a de la norme nf en 71-1)¤- présence d'un petit élément (porte-clés) libéré après essai de traction à 33 ± 1 n",
+      "risques_encourus": "étouffement",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "le village du bois 39130 clairvaux les lacs",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement|echange",
+      "date_publication": "2026-10-26T15:14:02+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23935/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23935/interne",
+      "image": "https://rappel.conso.gouv.fr/image/d76dc824-af06-4f07-a9ab-8465db44129b.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23935/interne",
+      "verified_at": "2026-10-27T02:51:08.391Z",
+      "published_at": "2026-10-27T02:51:08.391Z"
+    },
     {
       "id": "23922",
       "rappel_guid": "d71f5db3-3467-439a-a7cf-e189365fc049",
