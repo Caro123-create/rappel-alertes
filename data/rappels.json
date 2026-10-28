@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T02:51:08.391Z",
+  "generated_at": "2026-10-28T02:49:59.373Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19114,
-  "count": 32,
+  "api_total_count": 19119,
+  "count": 33,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 26
+      "count": 27
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -32,6 +32,39 @@
     }
   ],
   "records": [
+    {
+      "id": "23931",
+      "rappel_guid": "a5ee4d74-2753-43f4-b461-9deb40b381e8",
+      "numero_fiche": "2026-10-0258",
+      "libelle": "poulet basilic",
+      "marque_produit": "tafa",
+      "modeles_ou_references": "poulet basilic",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "présence du germe listeria <10ufc/g",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "lafayette gourmet",
+      "zone_geographique_de_vente": "paris (75)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-27T17:35:41+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23931/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23931/interne",
+      "image": "https://rappel.conso.gouv.fr/image/bb3f571d-55b7-4eed-a304-2db5225a58a7.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23931/interne",
+      "verified_at": "2026-10-28T02:49:59.373Z",
+      "published_at": "2026-10-28T02:49:59.373Z"
+    },
     {
       "id": "23935",
       "rappel_guid": "315e127b-c88d-4ebe-8e9a-f61aa983c1bc",
