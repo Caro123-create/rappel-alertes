@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T02:54:28.303Z",
+  "generated_at": "2026-10-30T02:54:15.750Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19121,
-  "count": 34,
+  "api_total_count": 19132,
+  "count": 35,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 28
+      "count": 29
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -32,6 +32,37 @@
     }
   ],
   "records": [
+    {
+      "id": "23951",
+      "rappel_guid": "c3bcb107-3a03-419f-be06-ca9229071cc1",
+      "numero_fiche": "2026-10-0276",
+      "libelle": "salade de riz composée",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "sans marque/sans modèle",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "détection de listeria monocytogenes",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "e. leclerc chaumont",
+      "zone_geographique_de_vente": "haute-marne (52)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-29T15:51:32+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23951/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23951/interne",
+      "image": "https://rappel.conso.gouv.fr/image/90e5dd52-a48d-4cdd-ae06-ea2cb878543f.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23951/interne",
+      "verified_at": "2026-10-30T02:54:15.750Z",
+      "published_at": "2026-10-30T02:54:15.750Z"
+    },
     {
       "id": "23944",
       "rappel_guid": "25522ff2-eac5-4bcd-b370-c23235289ba1",
