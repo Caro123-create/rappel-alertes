@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T02:54:15.750Z",
+  "generated_at": "2026-10-31T08:10:14.767Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19132,
-  "count": 35,
+  "api_total_count": 19147,
+  "count": 36,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 29
+      "count": 30
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -32,6 +32,37 @@
     }
   ],
   "records": [
+    {
+      "id": "23976",
+      "rappel_guid": "45a54956-5e1a-43a4-a1ed-e24c4d3e88c4",
+      "numero_fiche": "2026-10-0300",
+      "libelle": "tome fraiche de cantal",
+      "marque_produit": "coopérative laitière de la planeze",
+      "modeles_ou_references": "tome fraiche de cantal broyée et salée / tome fraiche de cantal bloc",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "lait et produits laitiers",
+      "motif_rappel": "présence possible de salmonelles",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "boutique de la coop",
+      "zone_geographique_de_vente": "cantal (15)",
+      "modalites_de_compensation": "remboursement|echange",
+      "date_publication": "2026-10-30T16:15:49+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23976/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23976/interne",
+      "image": "https://rappel.conso.gouv.fr/image/f2ca2737-2585-46b5-b220-2987d4b32941.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23976/interne",
+      "verified_at": "2026-10-31T08:10:14.767Z",
+      "published_at": "2026-10-31T08:10:14.767Z"
+    },
     {
       "id": "23951",
       "rappel_guid": "c3bcb107-3a03-419f-be06-ca9229071cc1",
