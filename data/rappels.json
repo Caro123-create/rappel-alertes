@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:10:14.767Z",
+  "generated_at": "2026-11-01T02:51:48.729Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19147,
-  "count": 36,
+  "api_total_count": 19157,
+  "count": 37,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 30
+      "count": 31
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -62,6 +62,35 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23976/interne",
       "verified_at": "2026-10-31T08:10:14.767Z",
       "published_at": "2026-10-31T08:10:14.767Z"
+    },
+    {
+      "id": "23978",
+      "rappel_guid": "ec8ad009-2174-47c5-b478-c5f85eb4d45c",
+      "numero_fiche": "2026-09-0193",
+      "libelle": "saucisse fraîche de canard",
+      "marque_produit": "fontalbat mazars",
+      "modeles_ou_references": "saucisse fraîche de canard en poche sous vide",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "présence de salmonelle",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "mangeons frais, provence halles",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-30T16:12:04+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23978/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23978/interne",
+      "image": "https://rappel.conso.gouv.fr/image/43445e3f-e856-4960-acc4-df265a56078e.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23978/interne",
+      "verified_at": "2026-11-01T02:51:48.729Z",
+      "published_at": "2026-11-01T02:51:48.729Z"
     },
     {
       "id": "23951",
