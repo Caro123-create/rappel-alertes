@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T02:51:48.729Z",
+  "generated_at": "2026-11-02T09:04:24.396Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,8 +7,8 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19157,
-  "count": 37,
+  "api_total_count": 19158,
+  "count": 38,
   "categories": [
     {
       "name": "alimentation",
@@ -18,7 +18,7 @@
     {
       "name": "bébés-enfants (hors alimentaire)",
       "slug": "bebes-enfants-hors-alimentaire",
-      "count": 3
+      "count": 4
     },
     {
       "name": "appareils électriques, outils",
@@ -91,6 +91,34 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23978/interne",
       "verified_at": "2026-11-01T02:51:48.729Z",
       "published_at": "2026-11-01T02:51:48.729Z"
+    },
+    {
+      "id": "23739",
+      "rappel_guid": "a927d91a-0c45-4f7c-8932-1dde61a933c3",
+      "numero_fiche": "2026-10-0068",
+      "libelle": "peluche sirènes 20cm",
+      "marque_produit": "ellug plush",
+      "modeles_ou_references": "item 0752190",
+      "categorie_produit": "bébés-enfants (hors alimentaire)",
+      "sous_categorie_produit": "jouets",
+      "motif_rappel": "non conformes et dangereux compte tenu des déterminations opérées.",
+      "risques_encourus": "étouffement",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "escale en baie",
+      "zone_geographique_de_vente": "somme (80)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-10-30T15:54:20+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/23739/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/23739/interne",
+      "image": "https://rappel.conso.gouv.fr/image/35e9b873-a64a-4e59-8bc1-79f3398af5af.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/23739/interne",
+      "verified_at": "2026-11-02T09:04:24.396Z",
+      "published_at": "2026-11-02T09:04:24.396Z"
     },
     {
       "id": "23951",
