@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T02:50:04.009Z",
+  "generated_at": "2026-11-04T08:48:15.165Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19163,
-  "count": 39,
+  "api_total_count": 19175,
+  "count": 40,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 32
+      "count": 33
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -32,6 +32,38 @@
     }
   ],
   "records": [
+    {
+      "id": "24003",
+      "rappel_guid": "2788be4c-8020-4db1-8f08-b8040d70cea5",
+      "numero_fiche": "2026-11-0023",
+      "libelle": "champignons morilles sechees 60g",
+      "marque_produit": "champibon",
+      "modeles_ou_references": "534199",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "autres",
+      "motif_rappel": "probable contamination d'un lot de morilles par une toxine susceptible d'être à l'origine d'intoxication alimentaire",
+      "risques_encourus": "autre risque",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "contacter le service consommateur"
+      ],
+      "distributeurs": "b&m",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-03T19:59:41+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24003/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24003/interne",
+      "image": "https://rappel.conso.gouv.fr/image/2fc0c0f5-81f4-42a7-9e9b-8e1072162519.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24003/interne",
+      "verified_at": "2026-11-04T08:48:15.165Z",
+      "published_at": "2026-11-04T08:48:15.165Z"
+    },
     {
       "id": "23947",
       "rappel_guid": "b1150453-5c4e-45e1-bc68-68004dad92b6",
