@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T08:48:15.165Z",
+  "generated_at": "2026-11-05T09:11:13.716Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19175,
-  "count": 40,
+  "api_total_count": 19188,
+  "count": 41,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 33
+      "count": 34
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -32,6 +32,35 @@
     }
   ],
   "records": [
+    {
+      "id": "24015",
+      "rappel_guid": "19d9ad3e-72b4-4e44-ad2c-9dd92e98993c",
+      "numero_fiche": "2026-11-0034",
+      "libelle": "merguez boeuf mouton",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "merguez boeuf mouton",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "suspicion de présence de listéria monocytogenes",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "détaillants, carrefour, sté grosdoit, intermarché, leclerc, métro, super u",
+      "zone_geographique_de_vente": "calvados (14)|eure (27)|eure-et-loir (28)|loir-et-cher (41)|manche (50)|orne (61)|sarthe (72)|seine-maritime (76)|seine-et-marne (77)|yvelines (78)|essonne (91)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-04T20:42:29+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24015/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24015/interne",
+      "image": "https://rappel.conso.gouv.fr/image/713fa7d4-373f-4ac6-a17b-7c2e25b39027.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24015/interne",
+      "verified_at": "2026-11-05T09:11:13.716Z",
+      "published_at": "2026-11-05T09:11:13.716Z"
+    },
     {
       "id": "24003",
       "rappel_guid": "2788be4c-8020-4db1-8f08-b8040d70cea5",
