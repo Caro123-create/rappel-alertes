@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T09:11:13.716Z",
+  "generated_at": "2026-11-06T09:02:44.476Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,8 +7,8 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19188,
-  "count": 41,
+  "api_total_count": 19197,
+  "count": 42,
   "categories": [
     {
       "name": "alimentation",
@@ -26,12 +26,46 @@
       "count": 2
     },
     {
+      "name": "autres",
+      "slug": "autres",
+      "count": 1
+    },
+    {
       "name": "sports-loisirs",
       "slug": "sports-loisirs",
       "count": 1
     }
   ],
   "records": [
+    {
+      "id": "24021",
+      "rappel_guid": "0d62ac90-e9bb-4c74-b7e6-0d0e06cdfed0",
+      "numero_fiche": "2026-11-0027",
+      "libelle": "chargeur theragun g4pro",
+      "marque_produit": "therabody",
+      "modeles_ou_references": "chargeur theragun g4pro",
+      "categorie_produit": "autres",
+      "sous_categorie_produit": "divers",
+      "motif_rappel": "dans certaines circonstances, surchauffe possible des chargeurs theragun g4pro concernés lors de la recharge de la batterie amovible de l’appareil. risque d’incident thermique.",
+      "risques_encourus": "incendie",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus utiliser le produit",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "elite medical srl ¤groupe sms-eur¤rlvnt distribution france",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-11-05T12:14:40+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24021/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24021/interne",
+      "image": "https://rappel.conso.gouv.fr/image/d6fa4813-5dbc-43d5-bdc9-acb68d55d491.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24021/interne",
+      "verified_at": "2026-11-06T09:02:44.476Z",
+      "published_at": "2026-11-06T09:02:44.476Z"
+    },
     {
       "id": "24015",
       "rappel_guid": "19d9ad3e-72b4-4e44-ad2c-9dd92e98993c",
