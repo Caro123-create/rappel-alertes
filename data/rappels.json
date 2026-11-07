@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T09:02:44.476Z",
+  "generated_at": "2026-11-07T08:31:29.981Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19197,
-  "count": 42,
+  "api_total_count": 19205,
+  "count": 43,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 34
+      "count": 35
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24040",
+      "rappel_guid": "6dfee62b-984a-422c-b57c-2e30eebac972",
+      "numero_fiche": "2026-11-0053",
+      "libelle": "oeufs label rouge",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "6 oeufs label rouge¤12 oeufs label rouge ¤oeufs plein air vendus en vrac",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "oeufs et produits à base d'oeufs",
+      "motif_rappel": "présence salmonelle enteritidis",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "calidel, magasins à la ferme coop chez vous, aurelien, maxiviande, magasin d'usine montagne noire (albi), prix miam, clients btob type boucherie charcuterie, casino, vival, spar",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-06T21:34:14+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24040/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24040/interne",
+      "image": "https://rappel.conso.gouv.fr/image/7f5af584-045c-4207-bfb4-7eebdf126d99.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24040/interne",
+      "verified_at": "2026-11-07T08:31:29.981Z",
+      "published_at": "2026-11-07T08:31:29.981Z"
+    },
     {
       "id": "24021",
       "rappel_guid": "0d62ac90-e9bb-4c74-b7e6-0d0e06cdfed0",
