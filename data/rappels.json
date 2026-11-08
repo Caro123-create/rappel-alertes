@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T08:31:29.981Z",
+  "generated_at": "2026-11-08T02:56:40.922Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19205,
-  "count": 43,
+  "api_total_count": 19207,
+  "count": 44,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 35
+      "count": 36
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -67,6 +67,37 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24040/interne",
       "verified_at": "2026-11-07T08:31:29.981Z",
       "published_at": "2026-11-07T08:31:29.981Z"
+    },
+    {
+      "id": "24039",
+      "rappel_guid": "f3bf1096-cc06-4cef-87b8-bd823b55b04b",
+      "numero_fiche": "2026-11-0052",
+      "libelle": "pâté de sardinelle pinton en 180 g",
+      "marque_produit": "pinton",
+      "modeles_ou_references": "pâté de sardinelle pinton en 180 g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "produits de la pêche et d'aquaculture",
+      "motif_rappel": "gonflement de certaines boites lié à un problème au sertissage.¤présence de flore anaérobie élevée.",
+      "risques_encourus": "clostridium botulinum (agent responsable du botulisme)|clostridium perfringens|défaut de fabrication, défaut d'étanchéité (ex: micro fuites, thermoscellage défectueux) ou anomalies de conditionnement",
+      "preconisations_sanitaires": "le botulisme est une maladie rare qui résulte le plus souvent de la consommation d'un aliment contaminé contenant de la toxine botulique produite par clostridium botulinum. cette toxine se développe notamment dans les conserves ou les produits de charcuterie de fabrication familiale ou artisanale pour lesquelles le procédé de stérilisation n'a pas été maîtrisé ou la chaîne du froid n’a pas été respectée. l'intoxication botulique est caractérisée par des signes neurologiques : sensation de vision floue, paupières tombantes, troubles de la parole, difficulté à avaler, sécheresse de la bouche, faiblesse musculaire. les symptômes apparaissent généralement 12 à 72 heures après l'ingestion d'un aliment contaminé, mais ils peuvent se développer plus tardivement jusqu'à 10 jours. les personnes qui auraient consommé les produits concernés par ce rappel et qui présenteraient ce type de symptômes neurologiques dans les 10 jours après consommation sont invitées à consulter sans délai leur médecin traitant, en lui signalant cette consommation ainsi que le lieu et la date d'achat. en l’absence de symptôme dans les 10 jours après la dernière consommation de ces produits, il est inutile de s’inquiéter et de consulter un médecin.¤en complément, nous suggérons de consulter https://agriculture.gouv.fr/le-botulisme.¤d'une façon générale, les autorités sanitaires rappellent que pour éviter tout risque sanitaire, et notamment le botulisme, il est impératif de respecter les préconisations de conservation (températures, durées) définies par les fabricants des aliments.¤au moindre doute sur la qualité sanitaire d'un produit (aspect, odeur...), il convient de ne pas le consommer. la fabrication de conserves, que ce soit dans un cadre familial ou professionnel, nécessite des connaissances, un savoir-faire et des matériels adaptés.¤|les toxines produites par c. perfringens peuvent provoquer, dans les 24 heures qui suivent la consommation de l'aliment contaminé,  des symptômes gastro-intestinaux (diarrhée, maux de ventre, nausées, vomissements), rarement accompagnés de fièvre. le tableau clinique peut être plus grave chez les personnes sensibles, notamment les jeunes enfants et les personnes âgées.|ces produits ont été fabriqués et/ou conservés dans des conditions ne permettant pas d'apporter de garanties sanitaires satisfaisantes. ces produits sont donc susceptibles de présenter un danger pour la santé des consommateurs.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "magasins spécialisés exotiques",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-06T17:55:26+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24039/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24039/interne",
+      "image": "https://rappel.conso.gouv.fr/image/e6599b20-db10-4451-b3e6-518bea3c71a3.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24039/interne",
+      "verified_at": "2026-11-08T02:56:40.922Z",
+      "published_at": "2026-11-08T02:56:40.922Z"
     },
     {
       "id": "24021",
