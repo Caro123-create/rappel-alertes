@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T02:56:40.922Z",
+  "generated_at": "2026-11-09T02:48:39.569Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -8,12 +8,12 @@
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
   "api_total_count": 19207,
-  "count": 44,
+  "count": 45,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 36
+      "count": 37
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -98,6 +98,36 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24039/interne",
       "verified_at": "2026-11-08T02:56:40.922Z",
       "published_at": "2026-11-08T02:56:40.922Z"
+    },
+    {
+      "id": "24027",
+      "rappel_guid": "64403a1c-2bcf-46aa-8d30-7d3d7851bedf",
+      "numero_fiche": "2026-11-0044",
+      "libelle": "saucisson à l'ail",
+      "marque_produit": "loussouarn",
+      "modeles_ou_references": "saucisson à l'ail",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "présence de listeria monocytogenes",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "e.leclerc kerlouan",
+      "zone_geographique_de_vente": "finistere (29)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-06T17:43:13+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24027/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24027/interne",
+      "image": "https://rappel.conso.gouv.fr/image/929c7ca4-62fe-427b-8c4d-2a701b716757.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24027/interne",
+      "verified_at": "2026-11-09T02:48:39.569Z",
+      "published_at": "2026-11-09T02:48:39.569Z"
     },
     {
       "id": "24021",
