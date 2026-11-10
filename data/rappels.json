@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T02:48:39.569Z",
+  "generated_at": "2026-11-10T02:49:18.695Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19207,
-  "count": 45,
+  "api_total_count": 19216,
+  "count": 46,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 37
+      "count": 38
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,35 @@
     }
   ],
   "records": [
+    {
+      "id": "24047",
+      "rappel_guid": "088490ad-4290-4738-8a8e-56a1b628f03e",
+      "numero_fiche": "2026-11-0060",
+      "libelle": "champignons morilles sechees",
+      "marque_produit": "champibon",
+      "modeles_ou_references": "champignons morilles sechees",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "fruits et légumes",
+      "motif_rappel": "probable contamination d'un lot de morilles par une toxine susceptible d'être à l'origine d'intoxication alimentaire",
+      "risques_encourus": "autre risque",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "détruire le produit"
+      ],
+      "distributeurs": "promocash",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-09T16:12:28+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24047/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24047/interne",
+      "image": "https://rappel.conso.gouv.fr/image/24877c0f-4a54-45f1-b2a5-9054ff6d6faa.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24047/interne",
+      "verified_at": "2026-11-10T02:49:18.695Z",
+      "published_at": "2026-11-10T02:49:18.695Z"
+    },
     {
       "id": "24040",
       "rappel_guid": "6dfee62b-984a-422c-b57c-2e30eebac972",
