@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T02:49:18.695Z",
+  "generated_at": "2026-11-11T09:00:29.438Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19216,
-  "count": 46,
+  "api_total_count": 19226,
+  "count": 47,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 38
+      "count": 39
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,39 @@
     }
   ],
   "records": [
+    {
+      "id": "24049",
+      "rappel_guid": "ff4bc583-f182-405f-9cd2-e87fa947257a",
+      "numero_fiche": "2026-11-0062",
+      "libelle": "pâté de campagne",
+      "marque_produit": "maison laborie",
+      "modeles_ou_references": "pâté de campagne démoulé¤pâté de campagne en moule¤pâté de campagne en tranche ou en demi",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "présence faible de listeria monocytogene¤rappel de précaution car développement possible dans le produits avant la fin de dlc",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "grossistes, charcuterie/boucherie, restaurants",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-10T18:39:12+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24049/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24049/interne",
+      "image": "https://rappel.conso.gouv.fr/image/5076b6df-af16-43c8-9847-8b378e29118e.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24049/interne",
+      "verified_at": "2026-11-11T09:00:29.438Z",
+      "published_at": "2026-11-11T09:00:29.438Z"
+    },
     {
       "id": "24047",
       "rappel_guid": "088490ad-4290-4738-8a8e-56a1b628f03e",
