@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T09:00:29.438Z",
+  "generated_at": "2026-11-12T09:29:38.387Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,8 +7,8 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19226,
-  "count": 47,
+  "api_total_count": 19233,
+  "count": 48,
   "categories": [
     {
       "name": "alimentation",
@@ -23,7 +23,7 @@
     {
       "name": "appareils électriques, outils",
       "slug": "appareils-electriques-outils",
-      "count": 2
+      "count": 3
     },
     {
       "name": "autres",
@@ -37,6 +37,34 @@
     }
   ],
   "records": [
+    {
+      "id": "24057",
+      "rappel_guid": "2786c9cc-50d8-4c2a-bbd1-39d27fd5d60d",
+      "numero_fiche": "2026-11-0070",
+      "libelle": "suspension mandroni",
+      "marque_produit": "eglo",
+      "modeles_ou_references": "301303 - mandroni ambre¤301304 - mandroni noir fume¤301305 - mandroni vert¤301302 - mandroni 2 lumieres",
+      "categorie_produit": "appareils électriques, outils",
+      "sous_categorie_produit": "appareils électriques, électroménager",
+      "motif_rappel": "le produit présente un défaut de fabrication pouvant entraîner la rupture du verre après installation. ce risque survient lorsque le serrage appliqué lors du montage dépasse le niveau recommandé.",
+      "risques_encourus": "blessures",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "leroy merlin",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-12T09:46:28+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24057/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24057/interne",
+      "image": "https://rappel.conso.gouv.fr/image/0aa15648-8fae-490b-b3b9-701bcc6fdae6.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24057/interne",
+      "verified_at": "2026-11-12T09:29:38.387Z",
+      "published_at": "2026-11-12T09:29:38.387Z"
+    },
     {
       "id": "24049",
       "rappel_guid": "ff4bc583-f182-405f-9cd2-e87fa947257a",
