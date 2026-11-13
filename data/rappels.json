@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T09:29:38.387Z",
+  "generated_at": "2026-11-13T09:16:27.698Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19233,
-  "count": 48,
+  "api_total_count": 19242,
+  "count": 49,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 39
+      "count": 40
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,36 @@
     }
   ],
   "records": [
+    {
+      "id": "24062",
+      "rappel_guid": "3a863e6c-00fc-48e0-86b1-eac3a85a4c9e",
+      "numero_fiche": "2026-11-0075",
+      "libelle": "graines de courge et mélanges contenant des graines de courge",
+      "marque_produit": "b&s et sans marque",
+      "modeles_ou_references": "mélanges contenant graines de courge : mélange sportif, mélange spécial salade estivale¤graines de courge",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "noix et graines",
+      "motif_rappel": "détection salmonelle",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "snc allonnedis, zac de la pointe, 72190 sargé-lès-le-mans",
+      "zone_geographique_de_vente": "sarthe (72)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-12T16:16:57+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24062/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24062/interne",
+      "image": "https://rappel.conso.gouv.fr/image/d8672202-68e8-4c22-b9b8-2993b47b1710.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24062/interne",
+      "verified_at": "2026-11-13T09:16:27.698Z",
+      "published_at": "2026-11-13T09:16:27.698Z"
+    },
     {
       "id": "24057",
       "rappel_guid": "2786c9cc-50d8-4c2a-bbd1-39d27fd5d60d",
