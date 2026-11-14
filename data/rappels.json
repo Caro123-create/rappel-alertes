@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T09:16:27.698Z",
+  "generated_at": "2026-11-14T02:48:22.814Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19242,
-  "count": 49,
+  "api_total_count": 19250,
+  "count": 50,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 40
+      "count": 41
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24088",
+      "rappel_guid": "397d509e-3994-4fca-9071-c40bdfd6ffd2",
+      "numero_fiche": "2026-11-0100",
+      "libelle": "coquilles st jacques",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "coquilles saint-jacques vendues au rayon traditionnel",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "présence de listeria",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "carrefour market de  plouhinec -brizeux  uniquement",
+      "zone_geographique_de_vente": "finistere (29)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-13T17:17:32+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24088/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24088/interne",
+      "image": "https://rappel.conso.gouv.fr/image/5d2ccd16-4fbe-4c6a-b372-070fb0827f0b.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24088/interne",
+      "verified_at": "2026-11-14T02:48:22.814Z",
+      "published_at": "2026-11-14T02:48:22.814Z"
+    },
     {
       "id": "24062",
       "rappel_guid": "3a863e6c-00fc-48e0-86b1-eac3a85a4c9e",
