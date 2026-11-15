@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T02:48:22.814Z",
+  "generated_at": "2026-11-15T03:25:28.747Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19250,
-  "count": 50,
+  "api_total_count": 19252,
+  "count": 51,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 41
+      "count": 42
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -67,6 +67,35 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24088/interne",
       "verified_at": "2026-11-14T02:48:22.814Z",
       "published_at": "2026-11-14T02:48:22.814Z"
+    },
+    {
+      "id": "24085",
+      "rappel_guid": "6945f9a3-ff46-4c75-ae99-0000943b365f",
+      "numero_fiche": "2026-11-0097",
+      "libelle": "reblochon de savoie",
+      "marque_produit": "schmidhauser",
+      "modeles_ou_references": "reblochon de savoie",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "lait et produits laitiers",
+      "motif_rappel": "présence possible de salmonelles",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente"
+      ],
+      "distributeurs": "intermarché, système u, o tera, carrefour.",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-13T15:35:01+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24085/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24085/interne",
+      "image": "https://rappel.conso.gouv.fr/image/58faf8ba-e7a9-41b3-b379-ab680d6da327.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24085/interne",
+      "verified_at": "2026-11-15T03:25:28.747Z",
+      "published_at": "2026-11-15T03:25:28.747Z"
     },
     {
       "id": "24062",
