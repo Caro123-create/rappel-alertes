@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T03:21:49.824Z",
+  "generated_at": "2026-11-17T03:24:48.963Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19252,
-  "count": 52,
+  "api_total_count": 19260,
+  "count": 53,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 43
+      "count": 44
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,36 @@
     }
   ],
   "records": [
+    {
+      "id": "24094",
+      "rappel_guid": "448ed756-1e34-41b2-9d0e-5d1465baa6d0",
+      "numero_fiche": "2026-11-0105",
+      "libelle": "chipolata superieure traditionnelle",
+      "marque_produit": "les ateliers",
+      "modeles_ou_references": "chipolata superieure traditionnelle",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "détection de salmonelle spp",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "novoviandes",
+      "zone_geographique_de_vente": "loiret (45)|marne (51)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-16T13:07:48+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24094/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24094/interne",
+      "image": "https://rappel.conso.gouv.fr/image/9cb858e0-a772-486b-8d90-3a29fd8771fa.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24094/interne",
+      "verified_at": "2026-11-17T03:24:48.963Z",
+      "published_at": "2026-11-17T03:24:48.963Z"
+    },
     {
       "id": "24088",
       "rappel_guid": "397d509e-3994-4fca-9071-c40bdfd6ffd2",
