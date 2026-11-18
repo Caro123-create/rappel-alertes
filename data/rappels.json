@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T03:24:48.963Z",
+  "generated_at": "2026-11-18T03:33:40.954Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19260,
-  "count": 53,
+  "api_total_count": 19262,
+  "count": 54,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 44
+      "count": 45
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24102",
+      "rappel_guid": "3e6047cd-f211-4ce5-b0cd-623119c72bb6",
+      "numero_fiche": "2026-11-0112",
+      "libelle": "cocktail de fruits de mer 500g",
+      "marque_produit": "ocean sea",
+      "modeles_ou_references": "cocktail de fruits de mer 500g",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "produits de la pêche et d'aquaculture",
+      "motif_rappel": "une analyse a mis en évidence la présence de salmonelles.",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "voir liste des magasins en pièce jointe",
+      "zone_geographique_de_vente": "ain (01)|alpes-maritimes (06)|charente-maritime (17)|correze (19)|cote-d'or (21)|dordogne (24)|haute-garonne (31)|gers (32)|indre (36)|indre-et-loire (37)|jura (39)|loire-atlantique (44)|maine-et-loire (49)|nord (59)|hautes-pyrenees (65)|saone-et-loire (71)|sarthe (72)|deux-sevres (79)|var (83)|vendee (85)|vienne (86)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-17T18:14:06+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24102/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24102/interne",
+      "image": "https://rappel.conso.gouv.fr/image/8ac4a8f6-e445-47aa-932d-062f41b86f4a.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24102/interne",
+      "verified_at": "2026-11-18T03:33:40.954Z",
+      "published_at": "2026-11-18T03:33:40.954Z"
+    },
     {
       "id": "24094",
       "rappel_guid": "448ed756-1e34-41b2-9d0e-5d1465baa6d0",
