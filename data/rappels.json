@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T03:33:40.954Z",
+  "generated_at": "2026-11-19T03:22:06.471Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19262,
-  "count": 54,
+  "api_total_count": 19264,
+  "count": 55,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 45
+      "count": 46
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24099",
+      "rappel_guid": "51182084-bd8f-4826-9390-ff9de49e3ba1",
+      "numero_fiche": "2026-11-0109",
+      "libelle": "saucisse italienne",
+      "marque_produit": "grillo party",
+      "modeles_ou_references": "saucisse italienne",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "détection salmonelle spp",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "magasins carnivor et alphaprim",
+      "zone_geographique_de_vente": "bouches-du-rhone (13)|seine-et-marne (77)|var (83)|essonne (91)|seine-saint-denis (93)|val-d'oise (95)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-18T16:43:20+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24099/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24099/interne",
+      "image": "https://rappel.conso.gouv.fr/image/5d795af1-51bc-4957-91d8-cc1093619781.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24099/interne",
+      "verified_at": "2026-11-19T03:22:06.471Z",
+      "published_at": "2026-11-19T03:22:06.471Z"
+    },
     {
       "id": "24102",
       "rappel_guid": "3e6047cd-f211-4ce5-b0cd-623119c72bb6",
