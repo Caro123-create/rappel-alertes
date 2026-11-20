@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:22:06.471Z",
+  "generated_at": "2026-11-20T03:23:20.005Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19264,
-  "count": 55,
+  "api_total_count": 19273,
+  "count": 56,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 46
+      "count": 47
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,38 @@
     }
   ],
   "records": [
+    {
+      "id": "24123",
+      "rappel_guid": "42d930bf-8943-42cb-9471-037078b045a6",
+      "numero_fiche": "2026-11-0132",
+      "libelle": "reblochon de savoie",
+      "marque_produit": "edouard conus",
+      "modeles_ou_references": "format 450 gr",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "lait et produits laitiers",
+      "motif_rappel": "suspicion de contamination salmonelle",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "carrefour margencel et carrefour market seyssel",
+      "zone_geographique_de_vente": "haute-savoie (74)",
+      "modalites_de_compensation": "autre (voir informations complémentaires)",
+      "date_publication": "2026-11-19T17:36:27+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24123/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24123/interne",
+      "image": "https://rappel.conso.gouv.fr/image/1fd1a088-7f40-438f-8918-4deed0768004.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24123/interne",
+      "verified_at": "2026-11-20T03:23:20.005Z",
+      "published_at": "2026-11-20T03:23:20.005Z"
+    },
     {
       "id": "24099",
       "rappel_guid": "51182084-bd8f-4826-9390-ff9de49e3ba1",
