@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T03:23:20.005Z",
+  "generated_at": "2026-11-21T09:24:52.512Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19273,
-  "count": 56,
+  "api_total_count": 19288,
+  "count": 57,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 47
+      "count": 48
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24138",
+      "rappel_guid": "9a8bf29a-66a3-49ac-9444-9553ff68843b",
+      "numero_fiche": "2026-11-0145",
+      "libelle": "petits légumes sauce provençale et riz",
+      "marque_produit": "comme j'aime",
+      "modeles_ou_references": "d303a¤n°lot 2609018316",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "teneur en piment non conforme : certains plats de ce lot contiennent une quantité de piment¤nettement supérieure à celle prévue par la recette",
+      "risques_encourus": "modifications organoleptiques|brûlures",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "contacter le service consommateur",
+        "détruire le produit"
+      ],
+      "distributeurs": "vente directe",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "echange",
+      "date_publication": "2026-11-20T19:18:05+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24138/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24138/interne",
+      "image": "https://rappel.conso.gouv.fr/image/93def68e-b6a4-4105-9b21-a27b038eae55.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24138/interne",
+      "verified_at": "2026-11-21T09:24:52.512Z",
+      "published_at": "2026-11-21T09:24:52.512Z"
+    },
     {
       "id": "24123",
       "rappel_guid": "42d930bf-8943-42cb-9471-037078b045a6",
