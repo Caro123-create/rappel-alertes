@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T09:24:52.512Z",
+  "generated_at": "2026-11-22T09:30:15.231Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19288,
-  "count": 57,
+  "api_total_count": 19295,
+  "count": 58,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 48
+      "count": 49
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -67,6 +67,34 @@
       "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24138/interne",
       "verified_at": "2026-11-21T09:24:52.512Z",
       "published_at": "2026-11-21T09:24:52.512Z"
+    },
+    {
+      "id": "24120",
+      "rappel_guid": "24e22268-55fe-4dc2-be24-7c551d4649a5",
+      "numero_fiche": "2026-11-0129",
+      "libelle": "petit sale cuit en gelee",
+      "marque_produit": "morvan charcuteries  salaison",
+      "modeles_ou_references": "petit sale cuit en gelee",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "listeria",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer"
+      ],
+      "distributeurs": "morvan charcuteries salaisons",
+      "zone_geographique_de_vente": "nievre (58)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-20T14:26:24+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24120/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24120/interne",
+      "image": "https://rappel.conso.gouv.fr/image/96b2d17c-cd89-4175-87dd-215986acf771.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24120/interne",
+      "verified_at": "2026-11-22T09:30:15.231Z",
+      "published_at": "2026-11-22T09:30:15.231Z"
     },
     {
       "id": "24123",
