@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T09:30:15.231Z",
+  "generated_at": "2026-11-23T10:29:03.945Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19295,
-  "count": 58,
+  "api_total_count": 19299,
+  "count": 59,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 49
+      "count": 50
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24140",
+      "rappel_guid": "48e28a38-dff5-4452-ab1a-6f5f14c94c48",
+      "numero_fiche": "2026-11-0147",
+      "libelle": "thon basquaise/riz",
+      "marque_produit": "e.leclerc ibos",
+      "modeles_ou_references": "thon basquaise/riz emballé sous atmosphère protectrice ou vendu en vitrine traditionnelle",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "la société e.leclerc ibos le méridien procède au retrait de la vente et à un rappel du ou des produit(s) suivant(s) suite à la¤mise en évidence de la présence de salmonelles.",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "e.leclerc ibos le méridien",
+      "zone_geographique_de_vente": "hautes-pyrenees (65)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-23T09:27:22+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24140/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24140/interne",
+      "image": "https://rappel.conso.gouv.fr/image/28fa3675-6d4f-48c9-aa54-be4a8529f3c6.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24140/interne",
+      "verified_at": "2026-11-23T10:29:03.945Z",
+      "published_at": "2026-11-23T10:29:03.945Z"
+    },
     {
       "id": "24138",
       "rappel_guid": "9a8bf29a-66a3-49ac-9444-9553ff68843b",
