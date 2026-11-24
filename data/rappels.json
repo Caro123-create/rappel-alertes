@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T10:29:03.945Z",
+  "generated_at": "2026-11-24T03:24:49.120Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19299,
-  "count": 59,
+  "api_total_count": 19305,
+  "count": 60,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 50
+      "count": 51
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,37 @@
     }
   ],
   "records": [
+    {
+      "id": "24149",
+      "rappel_guid": "695a91f7-a6a8-4936-acae-bc9e3b7b5923",
+      "numero_fiche": "2026-11-0156",
+      "libelle": "roti bf tt rond tg 2kg",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "massonniere",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "detection salmonella",
+      "risques_encourus": "salmonella spp (agent responsable de la salmonellose)",
+      "preconisations_sanitaires": "les toxi-infections alimentaires causées par les salmonelles se traduisent par des troubles gastro-intestinaux (diarrhée, vomissements) d'apparition brutale souvent accompagnés de fièvre et de maux de tête qui surviennent généralement 6h à 72h après la consommation des produits contaminés.  ces symptômes peuvent être plus prononcés chez les jeunes enfants, les femmes enceintes, les sujets immunodéprimés et les personnes âgées. les personnes qui auraient consommé ces produits et qui présenteraient ces symptômes sont invitées à consulter leur médecin traitant en lui signalant cette consommation. en l'absence de symptômes dans les 7 jours après la consommation des produits concernés, il est inutile de s'inquiéter et de consulter un médecin. si le produit doit subir une cuisson avant consommation : la cuisson à cœur des produits (œufs durs, pâtisseries, viandes de volailles…) à +65°c permet de détruire ces bactéries et de prévenir les conséquences d'une telle contamination.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "ne plus utiliser le produit",
+        "rapporter le produit au point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "boucherie sarl benoist fils et fille 33500 libourne",
+      "zone_geographique_de_vente": "gironde (33)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-23T15:15:42+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24149/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24149/interne",
+      "image": "https://rappel.conso.gouv.fr/image/4dfa808f-61a6-41c1-ba62-0a9422c4182e.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24149/interne",
+      "verified_at": "2026-11-24T03:24:49.120Z",
+      "published_at": "2026-11-24T03:24:49.120Z"
+    },
     {
       "id": "24140",
       "rappel_guid": "48e28a38-dff5-4452-ab1a-6f5f14c94c48",
