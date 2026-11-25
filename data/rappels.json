@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T03:24:49.120Z",
+  "generated_at": "2026-11-25T03:20:52.067Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19305,
-  "count": 60,
+  "api_total_count": 19311,
+  "count": 61,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 51
+      "count": 52
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,36 @@
     }
   ],
   "records": [
+    {
+      "id": "24157",
+      "rappel_guid": "a8a40a93-6038-4660-a958-46b125680bda",
+      "numero_fiche": "2026-11-0164",
+      "libelle": "choux chantilly x2",
+      "marque_produit": "auchan",
+      "modeles_ou_references": "choux chantilly x2 (recette locale) fabrication",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "céréales et produits de boulangerie",
+      "motif_rappel": "suite à la présence de listeria monocytogenes (agent responsable de la listériose)",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le service consommateur"
+      ],
+      "distributeurs": "uniquement l'hypermarché auchan gap",
+      "zone_geographique_de_vente": "hautes-alpes (05)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-24T15:48:45+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24157/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24157/interne",
+      "image": "https://rappel.conso.gouv.fr/image/b093b365-445b-4b8c-a352-ad60ac412de2.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24157/interne",
+      "verified_at": "2026-11-25T03:20:52.067Z",
+      "published_at": "2026-11-25T03:20:52.067Z"
+    },
     {
       "id": "24149",
       "rappel_guid": "695a91f7-a6a8-4936-acae-bc9e3b7b5923",
