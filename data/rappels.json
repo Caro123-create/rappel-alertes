@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T03:20:52.067Z",
+  "generated_at": "2026-11-26T03:23:25.218Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19311,
-  "count": 61,
+  "api_total_count": 19328,
+  "count": 62,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 52
+      "count": 53
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,36 @@
     }
   ],
   "records": [
+    {
+      "id": "24174",
+      "rappel_guid": "aaa1d5ad-a440-45e8-9197-a21b715759eb",
+      "numero_fiche": "2026-11-0180",
+      "libelle": "chair de veau / chipolatas de veau / chipolatas de porc / saucisses de toulouse / chair de porc / farce de porc / merguez / paupiettes de veau",
+      "marque_produit": "fabrication magasin",
+      "modeles_ou_references": "chair de veau / chipolatas de veau / chipolatas de porc / saucisses de toulouse / chair de porc / farce de porc / merguez / paupiettes de veau",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "viandes",
+      "motif_rappel": "risque de morceaux de plastiques dans les produits",
+      "risques_encourus": "blessures",
+      "preconisations_sanitaires": null,
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "rapporter le produit au point de vente",
+        "contacter le point de vente"
+      ],
+      "distributeurs": "e. leclerc grand pineuilh¤80 avenue de la résistance 33220 pineuilh",
+      "zone_geographique_de_vente": "gironde (33)",
+      "modalites_de_compensation": "remboursement",
+      "date_publication": "2026-11-25T16:59:06+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24174/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24174/interne",
+      "image": "https://rappel.conso.gouv.fr/image/9ebfb19d-be04-495d-8d41-76ba9704a5af.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24174/interne",
+      "verified_at": "2026-11-26T03:23:25.218Z",
+      "published_at": "2026-11-26T03:23:25.218Z"
+    },
     {
       "id": "24157",
       "rappel_guid": "a8a40a93-6038-4660-a958-46b125680bda",
