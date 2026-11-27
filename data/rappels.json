@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T03:23:25.218Z",
+  "generated_at": "2026-11-27T03:21:15.797Z",
   "source": {
     "dataset": "rappelconso-v2-gtin-espaces",
     "api": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records",
@@ -7,13 +7,13 @@
     "portal": "https://rappel.conso.gouv.fr/"
   },
   "publication_policy": "file d'attente : au plus 1 nouvelle(s) fiche(s) par jour UTC (published_at)",
-  "api_total_count": 19328,
-  "count": 62,
+  "api_total_count": 19336,
+  "count": 63,
   "categories": [
     {
       "name": "alimentation",
       "slug": "alimentation",
-      "count": 53
+      "count": 54
     },
     {
       "name": "bébés-enfants (hors alimentaire)",
@@ -37,6 +37,36 @@
     }
   ],
   "records": [
+    {
+      "id": "24195",
+      "rappel_guid": "54ef3cfa-a225-4f57-9ed5-8bc93d2de009",
+      "numero_fiche": "2026-11-0201",
+      "libelle": "tarte 3 fromages",
+      "marque_produit": "sans marque",
+      "modeles_ou_references": "tarte 3 fromages",
+      "categorie_produit": "alimentation",
+      "sous_categorie_produit": "plats préparés et snacks",
+      "motif_rappel": "détection de présence de listeria monocytogenes",
+      "risques_encourus": "listeria monocytogenes (agent responsable de la listériose)",
+      "preconisations_sanitaires": "les personnes qui auraient consommé les « produits » mentionnés ci-dessus et qui présenteraient de la fièvre, isolée ou accompagnée de maux de tête, et des courbatures, sont invitées à consulter leur médecin traitant en lui signalant cette consommation.  des formes graves avec des complications neurologiques et des atteintes maternelles ou fœtales chez la femme enceinte peuvent également parfois survenir. les femmes enceintes ainsi que les personnes immunodéprimées et les personnes âgées doivent être particulièrement attentives à ces symptômes. la listériose est une maladie qui peut être grave et dont le délai d'incubation peut aller jusqu'à huit semaines.",
+      "conduites_a_tenir": [
+        "ne plus consommer",
+        "contacter le point de vente",
+        "détruire le produit"
+      ],
+      "distributeurs": "saveurs et vie",
+      "zone_geographique_de_vente": "france entière",
+      "modalites_de_compensation": "autre (voir informations complémentaires)",
+      "date_publication": "2026-11-26T16:35:31+00:00",
+      "date_de_fin_de_la_procedure_de_rappel": null,
+      "lien_officiel": "https://rappel.conso.gouv.fr/fiche-rappel/24195/interne",
+      "lien_affichette": "https://rappel.conso.gouv.fr/affichettepdf/24195/interne",
+      "image": "https://rappel.conso.gouv.fr/image/cafa8171-650d-476d-be5b-e1271740a2a7.jpg",
+      "nature_juridique_rappel": "volontaire (sans arrêté préfectoral)",
+      "source_url": "https://rappel.conso.gouv.fr/fiche-rappel/24195/interne",
+      "verified_at": "2026-11-27T03:21:15.797Z",
+      "published_at": "2026-11-27T03:21:15.797Z"
+    },
     {
       "id": "24174",
       "rappel_guid": "aaa1d5ad-a440-45e8-9197-a21b715759eb",
